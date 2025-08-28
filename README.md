@@ -43,3 +43,7 @@
 -   **Water Conservation:** Prevent over-irrigation and save water by accurately controlling irrigation valves and receiving data from sensors.
 -   **Remote Management:** Monitor and control your farm from anywhere, at any time.
 -   **Informed Decision-Making:** Make the best decisions for your farm management with access to accurate and real-time data.
+
+*WebKesht: Your smart partner in modern farming.*
+
+

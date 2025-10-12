@@ -1,15 +1,13 @@
 ---
-title: وب کشت
-description: راه‌حل یکپارچه برای آبیاری هوشمند با تکنولوژی اینترنت اشیاء 
+title: WebKesht
+description: An Integrated Solution for Smart Irrigation with IoT Technology 
 ---
 
 <div class="hero-section" markdown="1">
 
-# 🌱 آبیاری هوشمند با وب کشت
+# 🌱 WebKesht: The Smart Irrigation System
 
-<p class="hero-subtitle">
-راه‌حل جامع برای آبیاری هوشمند با تکنولوژی IoT
-</p>
+<p class="hero-subtitle"> A Comprehensive Solution for Smart Irrigation using IoT Technology </p>
 
 <div style="display: flex; justify-content: center; margin: 40px 0;">
     <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 30px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.3);">
@@ -17,11 +15,11 @@ description: راه‌حل یکپارچه برای آبیاری هوشمند ب�
     </div>
 </div>
 
-سامانه "وب کشت" یک ابزار قدرتمند و یکپارچه برای مدیریت هوشمند در کشاورزی و فضای سبز و بهینه‌سازی فرآیندهای آبیاری است. این سامانه به صورت مکانمند تحت سیستم اطلاعات جغرافیایی GIS، تکنولوژی اینترنت اشیا (IoT) و یک رابط کاربری ساده، به شما کمک می‌کند تا بهره‌وری مصرف آب در پروژه خود را افزایش دهید.
+The “WebKesht” system is a powerful and integrated tool for intelligent management in agriculture and green spaces, designed to optimize irrigation processes. This system leverages a location-based Geographic Information System (GIS), Internet of Things (IoT) technology, and a simple user interface to help you increase water consumption efficiency in your projects.
 
 <div class="hero-actions" markdown="1">
-[🚀 ورود به سامانه](http://app.webkesht.com){ .md-button .md-button--primary }
-[📖 راهنمای شروع سریع](quick-start/){ .md-button }
+[🚀 Login / Sign In / Access Platform ](http://app.webkesht.com){ .md-button .md-button--primary }
+[📖 Quick Start Guide](quick-start/){ .md-button }
 </div>
 </div>
 

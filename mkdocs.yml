@@ -1,0 +1,125 @@
+# اطلاعات کلی سایت
+site_name:  آبیاری هوشمند با وب کشت
+site_url: https://webkesht.com/
+site_description: 'مستندات جامع سامانه هوشمند مدیریت آبیاری وب‌کشت'
+site_author: 'تیم وب‌کشت'
+
+# مسیر خروجی
+site_dir: site/fa
+
+# تنظیمات پوسته
+theme:
+  name: material
+  language: fa
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.integrate
+  
+  font:
+    text: Vazirmatn
+    code: 'Fira Code'
+  
+palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: تغییر به حالت تاریک
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: تغییر به حالت روشن
+  
+icon:
+    logo: material/leaf
+  
+favicon:  images/favicon.ico
+
+# CSS سفارشی
+extra_css:
+  - stylesheets/custom.css
+  - stylesheets/MyStyle.css
+  - stylesheets/Article.css
+
+extra_javascript:
+- javascripts/custom.js
+
+
+
+# تنظیمات اضافی
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/webkesht
+    - icon: fontawesome/brands/instagram  
+      link: https://instagram.com/webkesht
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@webkesht.com
+
+# پلاگین‌ها (ساده شده)
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+  - blog:
+      blog_dir: blog
+  - meta:
+      meta_file: .meta.yml
+
+# افزونه‌های مارک‌داون ضروری
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+ 
+ 
+# ساختار ناوبری
+nav:
+  - خانه: index.md
+  - شروع سریع:
+    - راهنمای جامع کار با سامانه : quick-start/Guide.md
+  - راهنمای کاربری:
+    - user-guide/index.md
+    - راهنمای جامع بافت خاک: user-guide/Soil.md
+    - راهنمای جامع پوشش گیاهی: user-guide/Vegetation.md
+    - راهنمای جامع سیستم آبیاری: user-guide/Irrigation.md
+  - مقالات:
+    - blog/index.md
+  - ورود به سامانه/عضویت:
+    - http://app.webkesht.com
+  - پشتیبانی:
+    - support/index.md

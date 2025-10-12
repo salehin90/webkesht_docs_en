@@ -10,7 +10,7 @@ site_dir: site/fa
 # تنظیمات پوسته
 theme:
   name: material
-  language: fa
+  language: en
   custom_dir: overrides
   palette:
     - scheme: default

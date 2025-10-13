@@ -1,63 +1,58 @@
 ---
-title: راهنمای جامع معرفی سیستم های آبیاری به وب‌کشت
-description:  معرفی سیستم های آبیاری و پارامترهای اساسی جهت معرفی به سامانه آبیاری هوشمند وب کشت
+title: A Comprehensive Guide to Defining Irrigation Systems in WebKesht
+description: Defining irrigation systems and their essential parameters for the WebKesht smart irrigation system.
 ---
 
 <div class="container">
         <div class="header">
-            <h1> راهنمای تعیین سیستم‌های آبیاری برای مدیریت هوشمند آبیاری 💧</h1>
+            <h1> A Guide to Defining Irrigation Systems for Smart Irrigation Management💧</h1>
         </div>
 
         <div class="content">
             <p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;">
-                برای تنظیم زمان و میزان دقیق آبیاری توسط سامانه، ضروری است که اطلاعات فنی سیستم‌های آبیاری مورد استفاده در فضای سبز، باغ یا مزرعه‌ی خود را تعریف کنید.
-            </p>
+To enable the system to precisely set the irrigation duration and amount, it is essential to define the technical information of the irrigation systems used in your green space, garden, or farm. </p>
 
-                هدف این بخش این است که شما سیستم‌های متفاوتی را که آب را به گیاهان می‌رسانند (مانند بارانی، قطره‌ای، یا زیرسطحی)، همراه با دو پارامتر کلیدی تعریف کنید: <strong>راندمان</strong> و <strong>شدت پخش</strong>.
-
+The goal of this section is for you to define the different systems that deliver water to the plants (such as sprinkler, drip, or subsurface), along with two key parameters: <strong>Efficiency</strong> and <strong>Precipitation Rate</strong>.
+         
             <!-- بخش 1: راندمان سیستم آبیاری -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>⚙️ راندمان سیستم آبیاری (Efficiency)</span>
+                    <span>⚙️ System Efficiency (Efficiency)</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content">
                     <div class="section-body">
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">💧 راندمان چیست؟</h4>
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            راندمان نشان می‌دهد که چه درصدی از آب توزیع شده توسط سیستم، <strong>عملاً در ناحیه ریشه گیاه ذخیره می‌شود</strong> و هدر نمی‌رود (به دلیل تبخیر، بادبردگی، یا نشت).
-                        </p>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">💧 What is Efficiency?</h4>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> Efficiency indicates what percentage of the water distributed by the system is <strong>effectively stored in the plant’s root zone </strong> and is not lost (due to evaporation, wind drift, or runoff).                         </p>
 
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">⚡ اهمیت راندمان</h4>
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            در محاسبات از این عدد برای <strong>جبران هدررفت آب</strong> استفاده می‌شود. هر چه راندمان سیستم بالاتر باشد، میزان هدررفت آب کمتر و بهره‌وری آبیاری بیشتر خواهد بود.
-                        </p>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">⚡ The Importance of Efficiency </h4>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> In its calculations, the system uses this number <strong>to compensate for water loss</strong>. The higher the system efficiency, the lower the water loss and the greater the irrigation productivity. </p>
 
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📊 محدوده راندمان برای سیستم‌های مختلف آبیاری</h4>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📊 Efficiency Ranges for Different Irrigation Systems </h4>
 
                         <div class="table-container">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>نوع سیستم آبیاری</th>
-                                        <th>راندمان (%)</th>
+                                        <th>Irrigation System Type</th>
+                                        <th>Efficiency (%)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>آبیاری قطره‌ای</strong></td>
-                                        <td>85-95 (معمولاً 90)</td>
+                                        <td><strong>Drip Irrigation</strong></td>
+                                        <td>85-95 (Typically  90)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>آبیاری بارانی</strong></td>
-                                        <td>70-85 (معمولاً 75)</td>
+                                        <td><strong>Sprinkler Irrigation</strong></td>
+                                        <td>70-85 (Typically  75)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>آبیاری غرقابی/جویچه‌ای</strong></td>
-                                        <td>50-70 (معمولاً 60)</td>
+                                        <td><strong>Flood / Furrow Irrigation</strong></td>
+                                        <td>50-70 (Typically  60)</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>آبیاری زیرسطحی</strong></td>
+                                        <td><strong>Subsurface Irrigation</strong></td>
                                         <td>90-95</td>
                                     </tr>
                                 </tbody>
@@ -65,7 +60,7 @@ description:  معرفی سیستم های آبیاری و پارامترهای 
                         </div>
 
                         <div class="note-box">
-                            <strong>📌 نکته:</strong> در صورت وجود، از مقادیر اندازه‌گیری شده یا توصیه‌شده توسط سازنده یا طراح سیستم استفاده کنید.
+                            <strong>📌 Note: </strong>If available, use the measured or recommended values provided by the system’s manufacturer or designer.
                         </div>
                     </div>
                 </div>
@@ -76,47 +71,38 @@ description:  معرفی سیستم های آبیاری و پارامترهای 
             <!-- بخش 2: شدت پخش -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>💦 شدت پخش گسیلنده‌ها (Application Rate)</span>
+                    <span>💦 Precipitation Rate </span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content">
                     <div class="section-body">
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">🔍 شدت پخش چیست؟</h4>
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            شدت پخش، <strong>سرعتی</strong> است که آب توسط سیستم به خاک تحویل داده می‌شود. این پارامتر بر حسب <strong>میلی‌متر در ساعت (mm/hr)</strong> بیان می‌شود.
-                        </p>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">🔍 What is Precipitation Rate?</h4>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> The precipitation Rate is <strong>the speed</strong> at which water is delivered to the soil by the irrigation system. This parameter is expressed in <strong> millimeters per hour (mm/hr)</strong>. </p>
 
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">⚡ اهمیت شدت پخش</h4>
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            این عدد تعیین می‌کند که آب با چه سرعتی به زمین می‌رسد و مستقیماً بر <strong>مدت زمان آبیاری</strong> اثر می‌گذارد. نرم‌افزار از این پارامتر برای محاسبه دقیق اینکه شیر باید چند دقیقه باز بماند تا مقدار آب مورد نیاز تأمین شود، استفاده می‌کند.
-                        </p>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">⚡ The Importance of Precipitation Rate </h4>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> This number determines how quickly water reaches the ground and directly impacts <strong>the irrigation duration</strong>. The software uses this parameter to precisely calculate how many minutes the valve must remain open to supply the required amount of water. </p>
 
                         <!-- زیربخش 1: آبیاری بارانی -->
                         <div class="sub-section">
                             <div class="sub-header" onclick="toggleSubSection(this)">
-                                <span>🌧️ نحوه محاسبه برای آبیاری بارانی</span>
+                                <span>🌧️ How to Calculate for Sprinkler Irrigation</span>
                                 <span class="sub-icon">−</span>
                             </div>
                             <div class="sub-content">
                                 <div class="sub-body">
-                                    <p style="margin-bottom: 18px; text-align: justify; line-height: 1.8;">
-                                        برای محاسبه شدت پخش در سیستم‌های بارانی، از فرمول زیر استفاده کنید:
-                                    </p>
-
+                                    <p style="margin-bottom: 18px; text-align: justify; line-height: 1.8;"> To calculate the Precipitation Rate for sprinkler systems, use the following formula:</p>
                                     <div class="formula-box">
 
-                                        📊 شدت پخش $=$ حجم کل آب خروجی $(l/h)$ $\div$ سطح تحت پوشش $(m^2)$
+                                        📊 Precipitation Rate $(mm/hr)$= Total Water Output $(l/h)$ $\div$ Covered Area $(m^2)$
                                     </div>
+                                    <p style="margin-bottom: 18px; text-align: justify; line-height: 1.8;"> For a simple calculation, you can sum the output of all nozzles within a sub-unit and divide it by the total area of that sub-unit.</p>
 
-<p style="margin-bottom: 18px; text-align: justify; line-height: 1.8;">برای محاسبه ساده، معمولاً خروجی تمام نازل‌ها را در یک زیرواحد جمع و بر کل مساحت آن زیرواحد تقسیم کنید.</p>
-
-                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">💡 مثال عملی:</h4>
+                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">💡 Practical Example:</h4>
                                     <p style="text-align: justify; margin-bottom: 18px; line-height: 1.8;">
-                                        اگر مجموع خروجی نازل‌ها <strong>400 لیتر در ساعت</strong> و مساحت زیرواحد <strong>100 متر مربع</strong> باشد:
-                                    </p>
+                                    If the total output of the nozzles is <strong> 400 liters per hour </strong> and the sub-unit area is liters per hour and the sub-unit area is <strong> 100 square meters </strong>:</p>
 
                                     <div class="formula-ex">
-                                        شدت پخش $=$ $400$ $\div$ $100$ $=$ $4$ میلی‌متر بر ساعت
+                                    Precipitation Rate = 400 $\div$ 100= 4 $(mm/hr)$  
                                     </div>
                                 </div>
                             </div>
@@ -125,39 +111,39 @@ description:  معرفی سیستم های آبیاری و پارامترهای 
                         <!-- زیربخش 2: آبیاری قطره‌ای -->
                         <div class="sub-section">
                             <div class="sub-header" onclick="toggleSubSection(this)">
-                                <span>💧 نحوه محاسبه برای آبیاری قطره‌ای</span>
+                                <span>💧 How to Calculate for Drip Irrigation</span>
                                 <span class="sub-icon">−</span>
                             </div>
                             <div class="sub-content">
                                 <div class="sub-body">
-                                    <p style="margin-bottom: 18px; text-align: justify; line-height: 1.8;">
-                                        برای محاسبه شدت پخش تقریبی در سیستم‌های قطره‌ای:
-                                    </p>
+                                    <p style="margin-bottom: 18px; text-align: justify; line-height: 1.8;"> To calculate the approximate Precipitation Rate for drip systems:</p>
 
                                     <div class="formula-box">
-                                        📊 شدت پخش تقریبی $=$ دبی هر قطره‌چکان $(l/h)$ $\div$ سطح اختصاصی به هر قطره‌چکان $(m^2)$
+                                    📊 Approximate Precipitation Rate $(mm/hr)$= Emitter Flow Rate $(l/h)$ $\div$ Area per Emitter $(m^2)$
                                     </div>
 
-                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">💡 مثال عملی:</h4>
+                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">💡 Practical Example:</h4>
                                     <p style="text-align: justify; margin-bottom: 10px; line-height: 1.8;">
-                                        فرض کنید:
+                                        Assume
                                     </p>
                                     <ul style="margin: 10px 0 18px 25px; line-height: 1.8;">
-                                        <li>دبی قطره‌چکان: <strong>4 لیتر در ساعت</strong></li>
-                                        <li>فاصله بین قطره‌چکان‌ها: <strong>1 متر</strong></li>
-                                        <li>فاصله بین ردیف‌ها: <strong>1 متر</strong></li>
-                                        <li>سطح اختصاصی هر قطره‌چکان: $1 \times 1 = 1$ متر مربع</li>
+                                        <li>Emitter Flow Rate: <strong>4 Liters/hour</strong></li>
+                                        <li>Spacing between emitters: <strong>1 meter</strong></li>
+                                        <li>Spacing between rows (laterals): <strong>1 meter</strong></li>
+                                        <li>
+                                        Area per emitter= 1 $\div$ 1= 1 $(m^2)$</li>
                                     </ul>
 
                                     <div class="formula-ex">
-                                        شدت پخش $=$ $4$ $\div$ $1$ $=$ $4$ میلی‌متر بر ساعت
+                                    Precipitation Rate = 4 $\div$ 1= 4$(mm/hr)$
+                                        </br>    
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="note-box" style="margin-top: 20px;">
-                            <strong>📚 نکته مهم:</strong> اگر کاتالوگ یا دفترچه راهنمای فنی گسیلنده‌های مورد استفاده (مانند آبپاش‌ها یا قطره‌چکان‌ها) در دسترس شماست، می‌توانید شدت پخش تعریف‌شده توسط شرکت سازنده را مستقیماً وارد کنید.
+                            <strong>📚 Important Note:</strong> If you have access to the catalog or technical manual for the emitters you are using (such as sprinklers or drippers), you can directly enter the application rate specified by the manufacturer.
                         </div>
                     </div>
                 </div>
@@ -168,24 +154,22 @@ description:  معرفی سیستم های آبیاری و پارامترهای 
             <!-- بخش 3: جمع‌بندی -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>✅ جمع‌بندی و راهنمای استفاده</span>
+                    <span>✅ Summary and Usage Guide</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content">
                     <div class="section-body">
                         <div class="highlight">
-                            <h4 style="margin: 0 0 15px 0; color: #2c5f2d;">🎯 با تعریف دقیق این دو پارامتر کلیدی، سامانه قادر خواهد بود:</h4>
+                            <h4 style="margin: 0 0 15px 0; color: #2c5f2d;">🎯 By accurately defining these two key parameters, the system will be able to:</h4>
                             <ul style="margin: 10px 0 0 25px; line-height: 1.9;">
-                                <li>میزان دقیق آب مورد نیاز را محاسبه کند</li>
-                                <li>مدت زمان آبیاری را به درستی تعیین کند</li>
-                                <li>هدررفت آب را به حداقل برساند</li>
-                                <li>بهره‌وری آبیاری را بهینه‌سازی کند</li>
+                                <li>Calculate the precise amount of water required.</li>
+                                <li>Correctly determine the irrigation duration.</li>
+                                <li>Minimize water loss.</li>
+                                <li>Optimize irrigation productivity.</li>
                             </ul>
                         </div>
 
-                        <p style="margin-top: 25px; text-align: justify; line-height: 1.8;">
-                            توصیه می‌شود برای دستیابی به بهترین نتایج، از اطلاعات فنی دقیق سیستم آبیاری خود استفاده کنید و در صورت امکان با متخصصان آبیاری مشورت نمایید.
-                        </p>
+                        <p style="margin-top: 25px; text-align: justify; line-height: 1.8;"> For best results, it is recommended to use the detailed technical information for your irrigation system and, if possible, consult with irrigation specialists.</p>
                     </div>
                 </div>
             </div>

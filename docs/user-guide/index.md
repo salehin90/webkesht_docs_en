@@ -1,112 +1,91 @@
 ---
-title: راهنمای کاربری وب‌کشت
-description: راهنمای جامع استفاده از سامانه آبیاری هوشمند وب‌کشت
+title: WebKesht User Guide
+description: The Comprehensive Guide to Using the WebKesht Smart Irrigation System
 ---
 
 <div class="hero-section" markdown="1">
 
-# 📚 راهنمای کاربری وب‌کشت
+# 📚 WebKesht User Guide
 
-<p class="hero-subtitle">
-راهنمای گام‌به‌گام راه‌اندازی و استفاده از سامانه آبیاری هوشمند
-</p>
+<p class="hero-subtitle"> The Comprehensive Guide to Using the WebKesht Smart Irrigation System </p>
 
 <div style="display: flex; justify-content: center; margin: 40px 0;">
     <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 30px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.3);">
-        <img src="images/WebKesht_Logo_Larg.png" alt="لوگو وب کشت" style="max-width: 200px; height: auto; display: block;">
+        <img src="images/English Logo-07.png" alt="WebKesht Logo" style="max-width: 200px; height: auto; display: block;">
     </div>
 </div>
-
-برای استفاده بهینه از سامانه وب‌کشت و دستیابی به مدیریت هوشمند آبیاری، لازم است اطلاعات دقیقی از **خاک**، **پوشش گیاهی** و **سیستم‌های آبیاری** خود به سامانه معرفی کنید. این راهنما شما را در سه مرحله اصلی همراهی می‌کند.
-
+To make the most of the WebKesht system and achieve intelligent irrigation management, you need to provide detailed information about your **soil**, **vegetation**, and **irrigation systems**. This guide will walk you through three main steps.
 </div>
-
 ---
-
 <div class="stats-container">
-<h2 class="stats-title" markdown="1">🎯 مراحل راه‌اندازی</h2>
+<h2 class="stats-title" markdown="1">🎯 Setup Steps</h2>
 <div class="stats-grid">
     <a href="Soil/" class="stat-card" style="text-decoration: none; color: inherit;">
         <div class="stat-number">1️⃣</div>
-        <div class="stat-label">تعیین بافت خاک</div>
+        <div class="stat-label">Determining Soil Texture</div>
     </a>
     <a href="Vegetation/" class="stat-card" style="text-decoration: none; color: inherit;">
         <div class="stat-number">2️⃣</div>
-        <div class="stat-label">معرفی پوشش گیاهی</div>
+        <div class="stat-label">Defining Vegetation Cover</div>
     </a>
     <a href="Irrigation/" class="stat-card" style="text-decoration: none; color: inherit;">
         <div class="stat-number">3️⃣</div>
-        <div class="stat-label">تنظیم سیستم آبیاری</div>
+        <div class="stat-label">Configuring the Irrigation System</div>
     </a>
 </div>
 </div>
-
-
 ---
-
 <div class="challenge-intro" markdown="1">
-<h2>چرا این اطلاعات اهمیت دارند؟</h2>
-<p>سامانه وب‌کشت با استفاده از الگوریتم‌های پیشرفته، میزان دقیق آب مورد نیاز گیاهان شما را محاسبه می‌کند. برای این محاسبات دقیق، سامانه نیاز دارد که ویژگی‌های خاک، نوع و تراکم گیاهان، و مشخصات سیستم آبیاری شما را بشناسد. با تکمیل صحیح این اطلاعات، می‌توانید تا <strong>40 درصد</strong> در مصرف آب صرفه‌جویی کنید.</p>
+<h2>Why is this information important?</h2>
+<p>
+The WebKesht system uses advanced algorithms to calculate the precise amount of water your plants need. For these accurate calculations, the system needs to know the properties of your soil, the type and density of your plants, and the specifications of your irrigation system. By correctly entering this information, you can save up to <strong>40%</strong> on water consumption.</p>
 </div>
-
 ---
-
 <div class="challenge-card" markdown="1">
 <div class="challenge-header">
 <span class="challenge-icon">🌾</span>
-<h2>مرحله اول: تعیین بافت خاک</h2>
+<h2>Step 1: Determining Soil Texture</h2>
 </div>
-
 <div class="challenge-description">
-شناخت دقیق بافت خاک، پایه و اساس برنامه‌ریزی صحیح آبیاری است. بافت خاک تعیین می‌کند که خاک شما چقدر آب نگه می‌دارد و با چه سرعتی آب را جذب می‌کند.
+A precise understanding of your soil texture is the foundation of proper irrigation scheduling. Soil texture determines how much water your soil can hold and how quickly it absorbs water.
 </div>
-
 <div class="challenge-details">
-<h3>در بخش خاک یاد می‌گیرید</h3>
-<p> 🔸 تعریف بافت خاک و انواع ذرات (شن، سیلت، رس)</p>
-<p> 🔸اهمیت بافت خاک در مدیریت آبیاری</p>
-<p> 🔸 روش‌های مزرعه‌ای تشخیص بافت خاک (بدون نیاز به آزمایشگاه)</p>
-<p> 🔸 آزمون لوله (Jar Test) برای تعیین درصد ذرات</p>
-<p> 🔸 استفاده از مثلث بافت خاک</p>
-<p> 🔸 آزمون مفتول (Ribbon Test) برای تشخیص میزان رس</p>
-<p> 🔸 جداول پارامترهای هیدرولیکی خاک</p>
-
+<h3>In the soil section, you will learn:</h3>
+<p> 🔸  Definition of soil texture and particle types (sand, silt, clay) </p>
+<p> 🔸 The importance of soil texture in irrigation management</p>
+<p> 🔸 Field methods for identifying soil texture (no lab required</p>
+<p> 🔸 The Jar Test to determine particle percentages</p>
+<p> 🔸 Using the Soil Texture Triangle</p>
+<p> 🔸 The Ribbon Test to determine clay content</p>
+<p> 🔸 Tables of Soil Hydraulic Parameters</p>
 </div>
-
 <div class="hero-actions" markdown="1">
-[📖 مطالعه راهنمای خاک](Soil/){ .md-button }
+[📖 Read the Soil Guide](Soil/){ .md-button }
 </div>
-
 </div>
-
-
- 
-
 ---
-
 <div class="challenge-card" markdown="1">
 <div class="challenge-header">
 <span class="challenge-icon">🌱</span>
-<h2>مرحله دوم: معرفی پوشش گیاهی</h2>
+<h2> Step 2: Defining Vegetation Cover </h2>
 </div>
 
 <div class="challenge-description">
-هر گیاه نیاز آبی متفاوتی دارد. برای آبیاری بهینه، باید مشخصات گیاهان خود را به سامانه معرفی کنید تا الگوریتم بتواند میزان دقیق آب مورد نیاز را محاسبه کند.
-</div>
+Every plant has different water requirements. For optimal irrigation, you must define your plant specifications in the system so the algorithm can calculate the precise amount of water needed.</div>
 
 <div class="challenge-details">
-<h3>در بخش پوشش گیاهی می‌گیرید</h3>
-<p> 🔸 نحوه گروه‌بندی پوشش گیاهی بر اساس زیرواحدهای آبیاری</p>
-<p> 🔸 تعیین فاکتور گونه (Species Factor) برای انواع گیاهان</p>
-<p> 🔸 محاسبه ضریب تراکم گیاه (Plant Density Factor)</p>
-<p> 🔸 تعیین عمق ریشه (Root Depth) بر اساس سن و نوع گیاه</p>
-<p> 🔸 جداول جامع فاکتورهای گونه برای گیاهان مختلف</p>
-<p> 🔸 راهنمای عملی تعیین عمق ریشه برای درختان، چمن و گل‌ها</p>
-<p> 🔸 نمونه‌های کاربردی و سناریوهای واقعی</p>
+<h3>In the vegetation section, you will learn:</h3>
+<p> 🔸 How to group vegetation based on irrigation sub-units</p>
+<p> 🔸 Determining the Species Factor for different plant types</p>
+<p> 🔸 Calculating the Plant Density Coefficient</p>
+<p> 🔸 Determining root depth based on plant age and type</p>
+<p> 🔸 Comprehensive tables of Species Factors for various plants</p>
+<p> 🔸 A practical guide to determining root depth for trees, turf, and flowers</p>
+<p> 🔸 Practical examples and real-world scenarios</p>
 </div>
 
 <div class="hero-actions" markdown="1">
-[📖 مطالعه راهنمای پوشش گیاهی](Vegetation/){ .md-button   }
+[📖 Read the Vegetation Guide](Vegetation/){ .md-button   }
 </div>
 </div>
 
@@ -115,65 +94,60 @@ description: راهنمای جامع استفاده از سامانه آبیار
 <div class="challenge-card" markdown="1">
 <div class="challenge-header">
 <span class="challenge-icon">💧</span>
-<h2>مرحله سوم: تنظیم سیستم آبیاری</h2>
+<h2>Step 3: Configuring the Irrigation System</h2>
 </div>
 
 <div class="challenge-description">
-برای تنظیم دقیق زمان و میزان آبیاری، سامانه باید اطلاعات فنی سیستم‌های آبیاری شما را بداند. این اطلاعات شامل راندمان سیستم و سرعت توزیع آب است.
-</div>
+To accurately set the irrigation duration and volume, the system needs the technical specifications of your irrigation setup. This information includes system efficiency and water distribution rate.</div>
 
 <div class="challenge-details">
-<h3>در بخش سیستم آبیاری یاد می‌گیرید</h3>
-<p> 🔸 تعریف راندمان سیستم آبیاری (Efficiency)</p>
-<p> 🔸 محدوده راندمان برای سیستم‌های مختلف (قطره‌ای، بارانی، غرقابی)</p>
-<p> 🔸 محاسبه شدت پخش (Application Rate) برای سیستم‌های مختلف</p>
-<p> 🔸 فرمول‌های محاسبه شدت پخش برای آبیاری بارانی</p>
-<p> 🔸 فرمول‌های محاسبه شدت پخش برای آبیاری قطره‌ای</p>
-<p> 🔸 نکات عملی استفاده از کاتالوگ‌های فنی</p>
-<p> 🔸 مثال‌های کاربردی و محاسبات واقعی</p>
+<h3>In the irrigation system section, you will learn:</h3>
+<p> 🔸 The definition of irrigation system efficiency</p>
+<p> 🔸 Efficiency ranges for different systems (drip, sprinkler, flood)</p>
+<p> 🔸 How to calculate the Precipitation Rate (or precipitation rate) for different systems</p>
+<p> 🔸 Practical examples and real-world calculations</p>
 </div>
-
 <div class="hero-actions" markdown="1">
-[📖 مطالعه راهنمای سیستم آبیاری](Irrigation/){ .md-button  }
+[📖 Read the Irrigation System Guide](Irrigation/){ .md-button  }
 </div>
 </div>
 
 ---
 
 <div class="challenge-intro" markdown="1">
-<h2>🚀 آماده برای شروع؟</h2>
-<p>با مطالعه این سه راهنما و تکمیل اطلاعات مورد نیاز در سامانه، می‌توانید از تمام قابلیت‌های هوشمند وب‌کشت بهره‌مند شوید و مدیریت آبیاری خود را به سطح جدیدی ارتقا دهید.</p>
+<h2>🚀 Ready to Get Started?</h2>
+<p>By reading these three guides and entering the required information into the system, you can leverage all of WebKesht’s smart features and elevate your irrigation management to a new level.</p>
 </div>
 
 <div class="stats-container">
-<h2 class="stats-title" markdown="1">💡 نکات مهم</h2>
+<h2 class="stats-title" markdown="1">💡 Important Tips:</h2>
 <div class="challenge-details" style="text-align: justify; line-height: 2;">
-<p>🔸 <strong>دقت در ورود اطلاعات:</strong> هر چه اطلاعات دقیق‌تری وارد کنید، محاسبات سامانه دقیق‌تر و صرفه‌جویی در مصرف آب بیشتر خواهد بود.</p>
+<p>🔸 <strong>Data Accuracy:</strong> The more accurate the information you enter, the more precise the system’s calculations will be, leading to greater water savings.</p>
 
-<p>🔸 <strong>استفاده از روش‌های مزرعه‌ای:</strong> در صورت عدم دسترسی به آزمایشگاه، می‌توانید از روش‌های ساده مزرعه‌ای برای تخمین پارامترها استفاده کنید.</p>
+<p>🔸 <strong>Use Field Methods:</strong> If you don’t have access to a lab, you can use simple field methods to estimate parameters. </p>
 
-<p>🔸 <strong>به‌روزرسانی اطلاعات:</strong> با رشد گیاهان و تغییر شرایط، اطلاعات را به‌روزرسانی کنید (مثلاً عمق ریشه درختان جوان).</p>
+<p>🔸 <strong>Keep Information Updated:</strong> Update the data as plants grow and conditions change (e.g., the root depth of young trees).</p>
 
-<p>🔸 <strong>مشاوره با کارشناسان:</strong> در صورت ابهام، می‌توانید با تیم پشتیبانی وب‌کشت مشورت کنید.</p>
+<p>🔸 <strong>Consult with Experts:</strong> If you have any doubts, you can consult with the WebKesht support team.</p>
 </div>
 </div>
 
 ---
 
 <div class="stats-container">
-<h2 class="stats-title" markdown="1">🎯 مطالعه را شروع کن</h2>
+<h2 class="stats-title" markdown="1">🎯 Start Reading</h2>
 <div class="stats-grid">
     <a href="Soil/" class="stat-card" style="text-decoration: none; color: inherit;">
         <div class="stat-number">1️⃣</div>
-        <div class="stat-label">راهنمای خاک</div>
+        <div class="stat-label">Soil Guide</div>
     </a>
     <a href="Vegetation/" class="stat-card" style="text-decoration: none; color: inherit;">
         <div class="stat-number">2️⃣</div>
-        <div class="stat-label">راهنمای پوشش گیاهی</div>
+        <div class="stat-label">Vegetation Guide</div>
     </a>
     <a href="Irrigation/" class="stat-card" style="text-decoration: none; color: inherit;">
         <div class="stat-number">3️⃣</div>
-        <div class="stat-label">راهنمای سیستم آبیاری</div>
+        <div class="stat-label">Irrigation System Guide</div>
     </a>
 </div>
 </div>
@@ -181,6 +155,6 @@ description: راهنمای جامع استفاده از سامانه آبیار
 
 ---
 <div class="hero-actions" markdown="1">
-[🏠 بازگشت به صفحه اصلی](../index.md){ .md-button }
-[🚀 ورود به سامانه](http://app.webkesht.com){ .md-button  }
+[🏠 Back to Home Page](../index.md){ .md-button }
+[🚀 Login to Platform](http://app.webkesht.com){ .md-button  }
  </div>

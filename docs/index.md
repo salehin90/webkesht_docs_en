@@ -210,7 +210,7 @@ The “WebKesht” system is a powerful and integrated tool for intelligent mana
 
 <div class="workflow-step">
 <div class="step-number">3</div>
-<h3>🔌  Connect Equipment</h3>
+<h3>🔌 Connect Equipment</h3>
 <p>Connect IoT devices to each sub-unit through a simple and fast process.</p>
 </div>
 

@@ -1,8 +1,8 @@
 # اطلاعات کلی سایت
-site_name:  آبیاری هوشمند با وب کشت
+site_name: 'WebKesht: The Smart Irrigation System'
 site_url: https://webkesht.com/
-site_description: 'مستندات جامع سامانه هوشمند مدیریت آبیاری وب‌کشت'
-site_author: 'تیم وب‌کشت'
+site_description: 'WebKesht Documentation'
+site_author: 'The WebKesht Team'
 
 # مسیر خروجی
 site_dir: site/fa
@@ -41,14 +41,14 @@ palette:
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: تغییر به حالت تاریک
+        name: Switch to Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: تغییر به حالت روشن
+        name: Switch to Light Mode
   
 icon:
     logo: material/leaf
@@ -109,17 +109,17 @@ markdown_extensions:
  
 # ساختار ناوبری
 nav:
-  - خانه: index.md
-  - شروع سریع:
-    - راهنمای جامع کار با سامانه : quick-start/Guide.md
-  - راهنمای کاربری:
+  - Home: index.md
+  - quick-start:
+    - Comprehensive System Guide : quick-start/Guide.md
+  - User Guides:
     - user-guide/index.md
-    - راهنمای جامع بافت خاک: user-guide/Soil.md
-    - راهنمای جامع پوشش گیاهی: user-guide/Vegetation.md
-    - راهنمای جامع سیستم آبیاری: user-guide/Irrigation.md
-  - مقالات:
+    - Comprehensive Soil Texture Guide: user-guide/Soil.md
+    - Comprehensive Vegetation Cover Guide: user-guide/Vegetation.md
+    - Comprehensive Irrigation System Guide: user-guide/Irrigation.md
+  - blog:
     - blog/index.md
-  - ورود به سامانه/عضویت:
+  - Login / Sign Up:
     - http://app.webkesht.com
-  - پشتیبانی:
+  - Support:
     - support/index.md

@@ -1,113 +1,106 @@
 ---
-title: راهنمای جامع معرفی انواع پوشش به وب‌کشت
-description:  معرفی پارامترهای اساسی پوشش گیاهی جهت معرفی به سامانه آبیاری هوشمند وب کشت
+title: A Comprehensive Guide to Defining Vegetation Types in WebKesht
+description: Introduction to Essential Vegetation Parameters for the WebKesht Smart Irrigation System
 ---
 
    <div class="container">
         <div class="header">
-             <h1> راهنمای تعیین پارامترهای پوشش گیاهی برای مدیریت هوشمند آبیاری 🌱</h1>
+             <h1> A Guide to Determining Vegetation Parameters for Smart Management 🌱</h1>
 
         </div>
 
         <div class="content">
-            <p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> آبیاری بهینه و جلوگیری از هدر رفت آب، مستلزم درک دقیق میزان نیاز آبی گیاهان شما است. سه پارامتر اصلی که الگوریتم‌های آبیاری ما برای محاسبه میزان آب مصرفی واقعی گیاه (Evapotranspiration) به آن نیاز دارند، عبارت‌اند از: <strong>فاکتور گونه</strong>، <strong>ضریب تراکم</strong> و <strong>عمق ریشه</strong>.
-            </p>
-<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> برای اینکه نرم‌افزار بتواند محاسبات را به صورت دقیق انجام دهد، شما باید پوشش گیاهی را بر اساس <strong>زیرواحدهای آبیاری </strong> (هر محوطه‌ای که توسط <strong>یک شیر مجزا</strong> آبیاری می‌شود) گروه‌بندی کنید و پارامترهای بالا را برای هر گروه تعریف نمایید. </p>
+            <p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> Optimal irrigation and water waste prevention require a precise understanding of your plants’ water needs. The three primary parameters our irrigation algorithms need to calculate the actual water consumption of the plants are: <strong>Species Factor</strong>, <strong>Density Coefficient</strong> and <strong>Root Depth</strong>. </p>
+<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> For the software to perform calculations accurately, you must group your vegetation based on <strong>irrigation sub-units</strong> (any area irrigated by <strong> a separate valve</strong>) and define the above parameters for each group. </p>
 
 
 <p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> 
-<strong>چگونه این لیست را تهیه کنیم؟
- </strong>
-</p>
-<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> 
-قانون اصلی و کلیدی در تعریف پوشش گیاهی در نرم‌افزار، این است که:
- <strong>لیست پوشش‌های گیاهی بر اساس نیاز آبی و مدیریت مشترک زیرواحدهای آبیاری (شیرهای مجزا) تعیین می‌شود.</strong></p>
+<strong>How to Create This List? </strong> </p>
+<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> The fundamental and key rule for defining vegetation in the software is this:
+<strong>The list of vegetation types is determined based on the water needs and shared management of irrigation sub-units (separate valves).</strong></p>
 
  <p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> 
-در واقع، شما برای هر <strong>زیرواحد آبیاری</strong>، مشخص می‌کنید که چه نوع پوششی دارد. اگر چند زیرواحد (چندین شیر) پوشش گیاهی <strong>مشترک</strong> یا <strong>مشابهی</strong> از نظر نیاز آبی داشته باشند، کافی است آن پوشش را <strong>یک بار</strong> در نرم‌افزار تعریف کنید.
+In practice, for each <strong>irrigation sub-unit</strong>, you specify its vegetation type. If several sub-units (multiple valves) have a <strong>common</strong> or <strong>similar vegetation</strong> type in terms of water needs, you only need to define that vegetation type <strong>once</strong> in the software.
+
 </p>
-<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> <strong> مثال: </strong> </p>
+<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> <strong> Examples: </strong> </p>
 
 
  <div class="table-container">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th> سناریو </th>
-                                        <th>زیرواحدهای آبیاری (شیرهای مجزا)</th>
-                                        <th>نوع پوشش گیاهی در زیرواحد</th>
-                                        <th> نحوه ی تعریف در لیست پوشش گیاهی</th>
-                                        <th>منطق تصمیم گیری</th>
-
+                                        <th>Scenario </th>
+                                        <th>Irrigation Sub-units (Separate Valves)</th>
+                                        <th>Vegetation Type in the Sub-unit</th>
+                                        <th>How to Define in the Vegetation List</th>
+                                        <th>Decision Logic</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>مثال ۱: فضای سبز</strong></td>
-                                        <td>زیرواحد ۱: چمن (بارانی) </br>
-                                            زیرواحد ۲: گل‌های فصلی (قطره‌ای)</br>
-                                            زیرواحد ۳: درختان (زیرسطحی) </td>
-                                        <td>چمن، گل‌های فصلی، درختان</td>
-                                        <td>۳ نوع پوشش:</br>
-                                            چمن</br>
-                                            گل</br>
-                                            درخت</td>
-                                        <td>هر زیرواحد پوشش و نیاز آبی کاملاً متفاوتی دارد و باید پارامترهای اختصاصی خود را تعریف کنند. </td>     
+                                        <td><strong> Example 1: Green Space</strong></td>
+                                        <td>Sub-unit 1: Turf (Sprinkler) </br>
+                                            Sub-unit 2: Seasonal Flowers</br>
+                                            Sub-unit 3: Trees (Subsurface) </td>
+                                        <td>Turf, Seasonal Flowers, Trees</td>
+                                        <td>3 Vegetation Types:</br>
+                                            Turf</br>
+                                            Flowers</br>
+                                            Trees</td>
+                                        <td>Each sub-unit has a completely different vegetation type and water requirement, so they must have their own specific parameters defined. </td>     
                                     </tr>
                                     <tr>
-                                        <td><strong>مثال ۲: باغ میوه بزرگ</strong></td>
-                                        <td>۱۰ زیرواحد مجزا (تمام باغ)</td>
-                                        <td>درختان میوه ترکیبی (سیب، آلو، زردآلو)</td>
-                                        <td>۱ نوع پوشش: </br>
-                                            درختان میوه ترکیبی</td>
-                                        <td>با وجود ۱۰ شیر مجزا، چون پوشش در تمامی زیرواحدها مشابه است و نیاز آبی یکسانی دارد، تعریف یک نوع پوشش کفایت می‌کند. </td> 
+                                        <td><strong>Example 2: Large Orchard</strong></td>
+                                        <td>10 separate sub-units (the entire orchard)</td>
+                                        <td>Mixed fruit trees (Apple, Plum, Apricot)</td>
+                                        <td>br><br> 1 Vegetation Type: <br> Mixed Fruit Trees </td>
+                                        <td> Despite having 10 separate valves, because the vegetation is similar across all sub-units and has the same water requirement, defining a single vegetation type is sufficient. </td> 
                                     </tr>   
                                 </tbody>
                             </table>
 
                             
                         </div>
-<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> در بخش‌های آتی، راهنمای گام به گام تعیین دقیق فاکتور گونه، ضریب تراکم و عمق ریشه را برای تکمیل این بخش، مشاهده خواهید کرد. </p>
+<p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> In the following sections, you will find a step-by-step guide to accurately determine the Species Factor, Density Coefficient, and Root Depth to complete this section. </p>
 
 
 
             <!-- بخش 1: فاکتور گونه -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>🌿 فاکتور گونه (Species Factor)</span>
+                    <span>🌿 Species Factor (Species Factor)</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content ">
                     <div class="section-body">
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            ضریب گونه فارغ از شرایط محیطی و سایر عوامل دیگر با توجه به نوع گونه از نظر میزان نیاز آبی تعیین می‌گردد. این فاکتور نشان می‌دهد گیاه شما نسبت به یک مرجع استاندارد (مانند چمن) چقدر آب بیشتری (یا کمتری) نیاز دارد.
-                        </p>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> The species factor is determined based on the species’ water requirement, independent of environmental conditions and other factors. This factor indicates how much more (or less) water your plant needs compared to a standard reference (such as turfgrass). </p>
 
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📊 محدوده تغییرات فاکتور گونه:</h4>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📊 Range of Variation for the Species Factor:</h4>
                         
                         <div class="table-container">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>فاکتور گونه بر اساس نیاز آبی</th>
-                                        <th>مقدار فاکتور گونه</th>
+                                        <th> Species Factor Based on Water Need</th>
+                                        <th>Species Factor Value</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>خیلی کم</strong></td>
-                                        <td>کمتر از 0.1</td>
+                                        <td><strong>Very Low</strong></td>
+                                        <td>Less than 0.1</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>کم</strong></td>
+                                        <td><strong>Low</strong></td>
                                         <td>0.1 - 0.3</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>متوسط</strong></td>
+                                        <td><strong>Medium</strong></td>
                                         <td>0.4 - 0.6</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>زیاد</strong></td>
+                                        <td><strong>High</strong></td>
                                         <td>0.7 - 0.9</td>
                                     </tr>
                                 </tbody>
@@ -115,7 +108,8 @@ description:  معرفی پارامترهای اساسی پوشش گیاهی ج�
                         </div>
 
                         <div class="note-box">
-                            <strong>📌 نکته:</strong> در جدول مشخصات گونه‌های گیاهی، فاکتور گونه برای چند گونه فضای سبز ارائه شده است. در این جدول <strong>"H"</strong> بیانگر گونه گیاهی پرنیاز، <strong>"M"</strong> بیانگر گونه با نیاز آبی متوسط و <strong>"L"</strong> بیانگر گونه کم‌نیاز است.
+                            <strong>📌 Note:</strong>In the plant species characteristics table, the species factor is provided for several green space species. In this table, <strong>“H”</strong> indicates a high-need plant species, <strong>“M”</strong> indicates a medium water-need species, and <strong>“L”</strong> indicates a low-need species.
+                            
                         </div>
                     </div>
                 </div>
@@ -126,40 +120,36 @@ description:  معرفی پارامترهای اساسی پوشش گیاهی ج�
             <!-- بخش 2: ضریب تراکم -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>📐 ضریب تراکم گیاه (Plant Density Factor)</span>
+                    <span>📐 Plant Density Factor </span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content ">
                     <div class="section-body">
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            تراکم گیاهان در فضای سبز به علت تفاوت در مرحله بلوغ گیاهان و فاصله بین گونه‌های متنوع گیاهان است. تراکم متوسط شرایطی است که مانند گیاه چمن، سطح تحت کشت تحت پوشش 90 الی 100 درصدی قرار گرفته باشد و با کاهش پوشش از این مقدار، ضریب تراکم می‌تواند تا مقدار 0.5 نیز کاهش پیدا کند.
-                        </p>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> The density of plants in a green space varies due to differences in plant maturity stages and the spacing between diverse plant species. Medium density is a condition where, similar to turfgrass, the cultivated area is 90% to 100% covered. As coverage decreases from this amount, the density coefficient can be reduced to as low as 0.5.</p>
 
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            مقادیر بالاتر از یک برای ضریب تراکم هنگامی مورد کاربرد خواهد بود که بر اثر کشت ترکیبی گیاهان پوششی و سایر گیاهان در کنار یکدیگر، پوشش مضاعف ایجاد شده باشد، مانند کشت درخت و بوته‌ها در بین سطح پوشیده از چمن به صورت لایه‌لایه.
-                        </p>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">Density coefficient values greater than one are applicable when a double canopy is created due to the mixed cultivation of groundcover plants and other plants alongside each other, such as planting trees and shrubs in layered arrangements within a turf-covered area. </p>
 
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📊محدوده ضریب تراکم برای گیاهان بکار رفته در سطوح فضای سبز:</h4>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📊 Range of Density Coefficient for Plants Used in Green Spaces:</h4>
                         
                         <div class="table-container">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>نیاز گونه</th>
-                                        <th>مقدار ضریب</th>
+                                        <th>Species Need</th>
+                                        <th>Coefficient Value</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>تراکم کم</strong></td>
+                                        <td><strong>Low Density</strong></td>
                                         <td>0.5 - 0.9</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>تراکم متوسط</strong></td>
+                                        <td><strong>Medium Density</strong></td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>تراکم بالا</strong></td>
+                                        <td><strong>High Density</strong></td>
                                         <td>1.1 - 1.3</td>
                                     </tr>
                                 </tbody>
@@ -175,41 +165,35 @@ description:  معرفی پارامترهای اساسی پوشش گیاهی ج�
             <!-- بخش 3: عمق ریشه -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>🌳 عمق ریشه (Root Depth)</span>
+                    <span>🌳 Root Depth</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content ">
                     <div class="section-body">
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            عمق ریشه تعیین می‌کند که آب باید تا چه عمقی در خاک نفوذ کند تا در دسترس ریشه‌های فعال گیاه قرار گیرد. عمق ریشه به سن گیاه، نوع گیاه (درخت، بوته یا چمن) و شرایط خاک (مانند وجود محدودیت یا عمق سفره آب) بستگی دارد.
-                        </p>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> Root depth determines how deep water must penetrate the soil to become available to the plant’s active roots. Root depth depends on the plant’s age, type (tree, shrub, or turf), and soil conditions (such as the presence of restrictive layers or the depth of the water table).</p>
 
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            در جدول مشخصات گونه‌های گیاهی، عمق ریشه بر اساس نوع سیستم ریشه‌ای گونه‌های گیاهی فضای سبز به صورت توصیفی ارائه شده است.
-                        </p>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> In the Plant Species Characteristics Table, root depth is presented descriptively based on the root system type of green space plant species.</p>
 
-                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📏 راهنمای استفاده:</h4>
-                        <p style="margin-bottom: 15px; text-align: justify; line-height: 1.8;">
-                            عمق ریشه را بر حسب سانتی‌متر برای سیستم خود وارد کنید:
-                        </p>
+                        <h4 style="margin: 20px 0 15px 0; color: #2c3e50; font-size: 1.05em;">📏  Usage Guide:</h4>
+                        <p style="margin-bottom: 15px; text-align: justify; line-height: 1.8;"> Enter the root depth in centimeters for your system:</p>
 
                         <div class="definition-grid">
                             <div class="definition-card">
-                                <h3>🌱 کم عمق</h3>
-                                <p><strong>محدوده:</strong> 10 - 40 سانتی‌متر</p>
-                                <p>مناسب برای گیاهان پوششی و چمن</p>
+                                <h3>🌱 Shallow</h3>
+                                <p><strong>Range:</strong> 10 - 40 cm</p>
+                                <p>Suitable for groundcovers and turf</p>
                             </div>
 
                             <div class="definition-card">
-                                <h3>🌿 متوسط</h3>
-                                <p><strong>محدوده:</strong> 40 - 70 سانتی‌متر</p>
-                                <p>مناسب برای بوته‌ها و درختچه‌ها</p>
+                                <h3>🌿 Medium</h3>
+                                <p><strong>Range:</strong> 40 - 70 cm</p>
+                                <p> Suitable for shrubs and small trees</p>
                             </div>
 
                             <div class="definition-card">
-                                <h3>🌳 عمیق</h3>
-                                <p><strong>محدوده:</strong> 70 - 150+ سانتی‌متر</p>
-                                <p>مناسب برای درختان بزرگ</p>
+                                <h3>🌳 Deep</h3>
+                                <p><strong>Range:</strong> 70 - 150+ cm</p>
+                                <p> Suitable for large trees</p>
                             </div>
                         </div>
                     </div>
@@ -221,475 +205,433 @@ description:  معرفی پارامترهای اساسی پوشش گیاهی ج�
             <!-- بخش 4: جدول مشخصات گونه‌های گیاهی -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>📋 جدول مشخصات گونه‌های گیاهی</span>
+                    <span>📋 Plant Species Characteristics Table</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content ">
                     <div class="section-body">
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            در جدول زیر، اطلاعات کامل نیاز آبی و عمق ریشه برای 64 گونه گیاهی رایج در فضای سبز ارائه شده است:
-                        </p>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> The table below provides complete information on the water needs and root depth for 64 common plant species used in green spaces:</p>
 
                         <div class="table-container">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>ردیف</th>
-                                        <th>نام فارسی</th>
-                                        <th>نام علمی</th>
-                                        <th>نیاز آبی</th>
-                                        <th>عمق ریشه (توضیحی)</th>
+                                        <th>Row</th>
+                                        <th>Name</th>
+                                        <th>Scientific Name</th>
+                                        <th>Water Need</th>
+                                        <th>Root Depth (Descriptive)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                <tr>
                                         <td>1</td>
-                                        <td>آبشار طلایی</td>
-                                        <td>Rosa banksiae</td>
-                                        <td>M</td>
-                                        <td>متوسط تا عمیق؛ ریشه‌ای قوی و گسترده.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>ابریشم ایرانی</td>
-                                        <td>Albizia julibrissin</td>
-                                        <td>M</td>
-                                        <td>متوسط؛ ریشه‌های گسترده و متراکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>ابریشم مصری</td>
-                                        <td>Erythrostemon gilliesii</td>
-                                        <td>L</td>
-                                        <td>متوسط تا عمیق؛ برای جذب آب در شرایط خشک.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>اختر برگ سبز و قرمز</td>
-                                        <td>Canna indica</td>
-                                        <td>M</td>
-                                        <td>ریزومی (زیرزمینی)؛ سیستم ریشه‌ای فیبری و کم عمق.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>ارغوان</td>
-                                        <td>Cercis siliquastrum</td>
-                                        <td>L</td>
-                                        <td>عمیق؛ سیستم ریشه‌ای محکم و مقاوم به خشکی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>استاتیس</td>
-                                        <td>Limonium sinuatum</td>
-                                        <td>M</td>
-                                        <td>متوسط؛ ریشه توده‌ای.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>استیپا</td>
-                                        <td>Stipa capansis</td>
-                                        <td>L</td>
-                                        <td>متوسط تا عمیق؛ ریشه‌های فیبری و مقاوم به خشکی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>اگروستیس</td>
-                                        <td>Agrostis stolonifera</td>
-                                        <td>M</td>
-                                        <td>کم عمق (زیر سطحی)؛ سیستم ریشه‌ای متراکم و فیبری (10 تا 30 سانتی‌متری).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>باران طلایی</td>
-                                        <td>Koelruteria paniculata</td>
-                                        <td>H</td>
-                                        <td>عمیق و پهن؛ برای تثبیت و جذب رطوبت.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>برگ نقره‌ای</td>
-                                        <td>Jacobaea maritima</td>
-                                        <td>M</td>
-                                        <td>کم عمق؛ ریشه‌های الیافی، مناسب برای پوشش زمین.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>11</td>
-                                        <td>بلوط همیشه سبز</td>
-                                        <td>Quercus ilex</td>
-                                        <td>L</td>
-                                        <td>عمیق و گسترده؛ برای استقامت و پایداری.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12</td>
-                                        <td>بومادران زرد و صورتی و خزنده</td>
-                                        <td>Achillea millefolium</td>
-                                        <td>M</td>
-                                        <td>کم عمق و الیافی؛ گیاه توسط ریزوم‌ها گسترش می‌یابد.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>13</td>
-                                        <td>پامپاس گراس</td>
-                                        <td>Cortaderia selloana</td>
-                                        <td>M</td>
-                                        <td>عمیق و متراکم؛ سیستم ریشه‌ای قوی و توده‌ای.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>14</td>
-                                        <td>پنی‌ستوم</td>
-                                        <td>Pennisetum alopecuroides</td>
-                                        <td>L</td>
-                                        <td>متوسط تا عمیق؛ سیستم ریشه‌ای توسعه یافته و مقاوم به خشکی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15</td>
-                                        <td>پنی‌ستوم</td>
-                                        <td>Pennisetum alopecuroides</td>
-                                        <td>L</td>
-                                        <td>متوسط تا عمیق؛ سیستم ریشه‌ای توسعه یافته و مقاوم به خشکی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>16</td>
-                                        <td>پیچ امین‌الوله</td>
-                                        <td>Lonicera caprifolium</td>
-                                        <td>M</td>
-                                        <td>متوسط تا عمیق؛ ریشه‌های قوی برای حمایت از صعود.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>17</td>
-                                        <td>پیچ اناری</td>
-                                        <td>Campsis grandiflora</td>
-                                        <td>L-M</td>
-                                        <td>عمیق؛ ریشه‌های قوی و گاهی تهاجمی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18</td>
-                                        <td>پیچ برفی</td>
-                                        <td>Fallopia baldschuanica</td>
-                                        <td>M</td>
-                                        <td>متوسط؛ ریشه توده‌ای و سریع‌الرشد.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>19</td>
-                                        <td>پیچ گلیسین</td>
-                                        <td>Wisteria sinensis</td>
-                                        <td>M</td>
-                                        <td>عمیق؛ ریشه قوی و چوبی، نیازمند فضای کافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td>پیراکانتا</td>
-                                        <td>Pyracantha coccinea</td>
-                                        <td>M</td>
-                                        <td>متوسط؛ ریشه‌های فیبری و متراکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>توت کاکوزا</td>
-                                        <td>Broussonetia papyrifera</td>
-                                        <td>M-H</td>
-                                        <td>عمیق و گسترده؛ مشابه درختان بزرگ.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>22</td>
-                                        <td>توری</td>
-                                        <td>Lagerstroemia indica</td>
-                                        <td>H</td>
-                                        <td>کم عمق؛ بهتر است ریشه‌های بالایی نزدیک سطح خاک باشند.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>23</td>
-                                        <td>ژونی‌پروس پیوندی</td>
-                                        <td>Juniperus horizentalis</td>
-                                        <td>L-M</td>
-                                        <td>کم عمق تا متوسط؛ سیستم ریشه‌ای گسترده.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>24</td>
-                                        <td>ژونی‌پروس هوریزونتالیس</td>
-                                        <td>Juniperus horizentalis</td>
-                                        <td>L</td>
-                                        <td>کم عمق تا متوسط؛ سیستم ریشه‌ای گسترده.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>25</td>
-                                        <td>داغداغان</td>
-                                        <td>Celtis australis - C.occidentalis</td>
-                                        <td>L</td>
-                                        <td>عمیق؛ برای جذب آب و استقامت بالا.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>26</td>
-                                        <td>داوودی</td>
-                                        <td>Chrysanthemum morifolium</td>
-                                        <td>M</td>
-                                        <td>کم عمق؛ ریشه توده‌ای و الیافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>27</td>
-                                        <td>دراسنا</td>
-                                        <td>Dracaena compacta</td>
-                                        <td>M</td>
-                                        <td>کم عمق و توده‌ای؛ معمولاً به صورت گیاه گلدانی کشت می‌شود.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>28</td>
-                                        <td>رزماری</td>
-                                        <td>Salvia rosmarinus</td>
-                                        <td>L-M</td>
-                                        <td>متوسط؛ ریشه قوی و الیافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>29</td>
-                                        <td>زربین (سرو ناز/شیراز)</td>
-                                        <td>Cupressus sempervirens</td>
-                                        <td>M</td>
-                                        <td>عمیق، گسترده و مقاوم به خشکی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>30</td>
-                                        <td>زرشک زینتی</td>
-                                        <td>Berberis thunbergii</td>
-                                        <td>M</td>
-                                        <td>کم عمق تا متوسط؛ ریشه‌های الیافی و متراکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>31</td>
-                                        <td>زنبق آلمانی</td>
-                                        <td>Iris germanica</td>
-                                        <td>M</td>
-                                        <td>ریزومی (بسیار سطحی)؛ ریزوم‌ها باید در سطح خاک یا کمی زیر آن کاشته شوند.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>32</td>
-                                        <td>زیتون معمولی</td>
-                                        <td>Olea europaea</td>
-                                        <td>L</td>
-                                        <td>عمیق و گسترده؛ برای جذب آب در شرایط خشک مدیترانه‌ای.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>33</td>
-                                        <td>سانتولینا</td>
-                                        <td>Santolina virens</td>
-                                        <td>L-M</td>
-                                        <td>کم عمق تا متوسط؛ ریشه‌های الیافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>34</td>
-                                        <td>سنجد</td>
-                                        <td>Elaeagnus angustifolia</td>
-                                        <td>L-M</td>
-                                        <td>عمیق و گسترده؛ مقاوم به خشکی و شوری.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>35</td>
-                                        <td>سرو ناز</td>
-                                        <td>Cupressus sempervirens</td>
-                                        <td>M</td>
-                                        <td>عمیق، گسترده و مقاوم به خشکی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>36</td>
-                                        <td>سرو نوش</td>
-                                        <td>Thuja orientalis</td>
-                                        <td>M</td>
-                                        <td>کم عمق تا متوسط؛ ریشه‌های گسترده و متراکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>37</td>
-                                        <td>سرو شیراز</td>
-                                        <td>Cupressus sempervirens</td>
-                                        <td>M</td>
-                                        <td>عمیق، گسترده و مقاوم به خشکی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>38</td>
-                                        <td>شمشاد طلایی</td>
-                                        <td>Euonymus japonica Aureo Marginata</td>
-                                        <td>M-H</td>
-                                        <td>متوسط؛ ریشه توده‌ای و متراکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>39</td>
-                                        <td>شیر خشت خزنده</td>
-                                        <td>Cotoneaster horizentaliss</td>
-                                        <td>L</td>
-                                        <td>کم عمق؛ ریشه‌های کوچک و الیافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>40</td>
-                                        <td>فرانکنیا</td>
-                                        <td>Frankenia thymofolia</td>
-                                        <td>M</td>
-                                        <td>متوسط؛ ریشه‌های الیافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>41</td>
-                                        <td>کاج بروسیا</td>
-                                        <td>Pinus brutia</td>
-                                        <td>L</td>
-                                        <td>عمیق؛ ریشه‌های محکم برای تثبیت در خاک‌های صخره‌ای.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>42</td>
-                                        <td>کاج سیاه</td>
-                                        <td>Pinus nigra</td>
-                                        <td>L</td>
-                                        <td>عمیق؛ ریشه‌های قوی و گسترده.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>43</td>
-                                        <td>کاج مشهد</td>
-                                        <td>Pinus mugo</td>
-                                        <td>L</td>
-                                        <td>متوسط تا عمیق؛ ریشه محکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>44</td>
-                                        <td>کارپوبروتوس</td>
-                                        <td>Carpobrotus edulis</td>
-                                        <td>L</td>
-                                        <td>کم عمق؛ گیاه پوششی، ریشه‌های سطحی و خزنده.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>45</td>
-                                        <td>کارکس آبی</td>
-                                        <td>Carex humilis</td>
-                                        <td>H</td>
-                                        <td>کم عمق؛ گیاه علفی با ریشه‌های الیافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>46</td>
-                                        <td>کراسولا قرمز</td>
-                                        <td>Crassula ovata</td>
-                                        <td>L</td>
-                                        <td>بسیار کم عمق؛ ریشه‌های الیافی و کم عمق (ساکولنت).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>47</td>
-                                        <td>کف نیوزلندی قهوه‌ای و ابلق</td>
-                                        <td>Phormium tenax</td>
-                                        <td>L-M</td>
-                                        <td>فیبری و نسبتاً کم عمق؛ ریشه توده‌ای و متراکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>48</td>
-                                        <td>کف پوش پیلا (یه لیموی پوششی)</td>
+                                        <td>aluminium plant</td>
                                         <td>Pilea cadierei</td>
                                         <td>M</td>
-                                        <td>کم عمق؛ گیاه پوششی.</td>
+                                        <td>Shallow; groundcover plant.</td>
                                     </tr>
-                                    <tr>
-                                        <td>49</td>
-                                        <td>کوکب کوهی</td>
-                                        <td>Rudbeckia hirta</td>
+                                <tr>
+                                        <td>2</td>
+                                        <td>Bentgrass</td>
+                                        <td>Agrostis stolonifera</td>
                                         <td>M</td>
-                                        <td>ریشه عمودی (Taproot)؛ ریشه اصلی ضخیم و عمیق.</td>
+                                        <td>Shallow (subsurface); dense and fibrous root system (10 to 30 cm depth)</td>
                                     </tr>
-                                    <tr>
-                                        <td>50</td>
-                                        <td>ختمی درختی</td>
-                                        <td>Hibiscus syriacus</td>
-                                        <td>M</td>
-                                        <td>متوسط؛ ریشه توده‌ای و متراکم.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>51</td>
-                                        <td>ختمی گل</td>
-                                        <td>Alcea sp</td>
-                                        <td>M</td>
-                                        <td>ریشه عمودی (Taproot)؛ ریشه اصلی ضخیم و عمیق.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>52</td>
-                                        <td>گز شاهی</td>
-                                        <td>Tamarix gallica</td>
+                                <tr>
+                                        <td>3</td>
+                                        <td>Bird of paradise</td>
+                                        <td>Erythrostemon gilliesii</td>
                                         <td>L</td>
-                                        <td>بسیار عمیق (تهاجمی)؛ توانایی ریشه‌زایی به عمق‌های بسیار زیاد (بیش از 4.5 متر).</td>
+                                        <td>Medium to Deep; for water absorption in dry conditions.</td>
                                     </tr>
-                                    <tr>
-                                        <td>53</td>
-                                        <td>لاواندولا</td>
-                                        <td>Lavandula angustifolia</td>
-                                        <td>L-M</td>
-                                        <td>ریشه عمودی (Taproot)؛ ریشه اصلی برای استقامت.</td>
+                                <tr>
+                                        <td>4</td>
+                                        <td>Black pine</td>
+                                        <td>Pinus nigra</td>
+                                        <td>L</td>
+                                        <td>Deep; strong and extensive roots.</td>
                                     </tr>
-                                    <tr>
-                                        <td>54</td>
-                                        <td>لیلکی</td>
+                                <tr>
+                                        <td>5</td>
+                                        <td>Bukhara fleeceflower</td>
+                                        <td>Fallopia baldschuanica</td>
+                                        <td>M</td>
+                                        <td>Medium; fast growing and clump forming root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>6</td>
+                                        <td>Carex </td>
+                                        <td>Carex humilis</td>
+                                        <td>H</td>
+                                        <td>Shallow; herbaceous plant with fibrous roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>7</td>
+                                        <td>Caspian locust</td>
                                         <td>Gleditsia caspica</td>
                                         <td>L</td>
-                                        <td>عمیق؛ ریشه‌های اصلی برای استقرار.</td>
+                                        <td>Deep; main roots for establishment.</td>
                                     </tr>
-                                    <tr>
-                                        <td>55</td>
-                                        <td>مارگریت</td>
-                                        <td>Argyranthemum frutescens</td>
-                                        <td>M</td>
-                                        <td>کم عمق؛ ریشه توده‌ای و الیافی.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>56</td>
-                                        <td>مغربی صورتی خزنده</td>
-                                        <td>Oenothera speciosa</td>
-                                        <td>M</td>
-                                        <td>ریشه عمودی (Taproot)؛ ریشه اصلی و عمیق.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>57</td>
-                                        <td>ملیا (زیتون تلخ)</td>
+                                <tr>
+                                        <td>8</td>
+                                        <td>Chinaberry tree</td>
                                         <td>Melia azedarach</td>
                                         <td>L</td>
-                                        <td>عمیق و گسترده؛ می‌تواند به زیرساخت‌ها آسیب بزند.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>58</td>
-                                        <td>نارون برگ ریز</td>
-                                        <td>Ulmus boissieri</td>
+                                        <td>Deep and extensive; can damage infrastructure.</td>
+                                    </tr> 
+                                <tr>
+                                        <td>9</td>
+                                        <td>Chinese fountain grass</td>
+                                        <td>Pennisetum alopecuroides</td>
+                                        <td>L</td>
+                                        <td>Medium to Deep; well-developed and drought-resistant root system.</td>
+                                    </tr> 
+                                <tr>
+                                        <td>10</td>
+                                        <td>Chinese wisteria</td>
+                                        <td>Wisteria sinensis</td>
                                         <td>M</td>
-                                        <td>عمیق با ریشه‌های سطحی بزرگ؛ ریشه‌های سطحی می‌توانند پیاده‌روها را بلند کنند.</td>
+                                        <td>Deep; strong and woody root, requires ample space.</td>
                                     </tr>
-                                    <tr>
-                                        <td>59</td>
-                                        <td>نسترن دائم‌گل (سفید و صورتی)</td>
+                                <tr>
+                                        <td>11</td>
+                                        <td>Common Hibiscus</td>
+                                        <td>Hibiscus syriacus</td>
+                                        <td>M</td>
+                                        <td>Medium; dense and clump-forming root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>12</td>
+                                        <td>Coneflowers</td>
+                                        <td>Rudbeckia hirta</td>
+                                        <td>M</td>
+                                        <td>Taproot; thick and deep main root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>13</td>
+                                        <td>Corn Plant</td>
+                                        <td>Dracaena compacta</td>
+                                        <td>M</td>
+                                        <td>Shallow and clump-forming; usually grown as a potted plant.</td>
+                                    </tr>
+                                <tr>
+                                        <td>14</td>
+                                        <td>Cotoneaster</td>
+                                        <td>Cotoneaster horizentaliss</td>
+                                        <td>L</td>
+                                        <td>Shallow; small and fibrous roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>15</td>
+                                        <td>Crape myrtle</td>
+                                        <td>Lagerstroemia indica</td>
+                                        <td>H</td>
+                                        <td>Shallow; it’s best for the upper roots to be near the soil surface.</td>
+                                    </tr>
+                                <tr>
+                                        <td>16</td>
+                                        <td>Dog rose</td>
                                         <td>Rosa canina</td>
                                         <td>M</td>
-                                        <td>متوسط تا عمیق؛ ریشه‌های قوی و توده‌ای.</td>
+                                        <td>Medium to Deep; strong and clump-forming roots.</td>
                                     </tr>
-                                    <tr>
-                                        <td>60</td>
-                                        <td>نوش طلایی کندرشد</td>
-                                        <td>Thuja orientalis</td>
+                                <tr>
+                                        <td>17</td>
+                                        <td>Elm</td>
+                                        <td>Ulmus boissieri</td>
                                         <td>M</td>
-                                        <td>کم عمق تا متوسط؛ ریشه‌های گسترده و متراکم.</td>
+                                        <td>Deep with large surface roots; surface roots can lift sidewalks.</td>
                                     </tr>
-                                    <tr>
-                                        <td>61</td>
-                                        <td>نیفوفیا</td>
+                                <tr>
+                                        <td>18</td>
+                                        <td>Firethorns</td>
+                                        <td>Pyracantha coccinea</td>
+                                        <td>M</td>
+                                        <td>Medium; fibrous and dense roots.</td>
+                                    </tr>  
+                                <tr>
+                                        <td>19</td>
+                                        <td>Florist's daisy</td>
+                                        <td>Chrysanthemum morifolium</td>
+                                        <td>M</td>
+                                        <td>Shallow; clump forming and fibrous root.</td>
+                                    </tr>   
+                                <tr>
+                                        <td>20</td>
+                                        <td>Frankenia</td>
+                                        <td>Frankenia thymofolia</td>
+                                        <td>M</td>
+                                        <td>Medium; fibrous roots.</td>
+                                    </tr>                       
+                                <tr>
+                                        <td>21</td>
+                                        <td>French tamarisk</td>
+                                        <td>Tamarix gallica</td>
+                                        <td>L</td>
+                                        <td>Very Deep (invasive); capable of rooting to very great depths (over 4.5 meters).</td>
+                                    </tr>
+                                <tr>
+                                        <td>22</td>
+                                        <td>German iris</td>
+                                        <td>Iris germanica</td>
+                                        <td>M</td>
+                                        <td>Rhizomatous (very shallow); rhizomes should be planted at or just below the soil surface.</td>
+                                    </tr>
+                                <tr>
+                                        <td>23</td>
+                                        <td>Golden Euonymus</td>
+                                        <td>Euonymus japonica Aureo Marginata</td>
+                                        <td>M-H</td>
+                                        <td>Medium; dense and clump forming root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>24</td>
+                                        <td>Golden rain tree</td>
+                                        <td>Koelruteria paniculata</td>
+                                        <td>H</td>
+                                        <td>Deep and wide; for stability and moisture absorption.</td>
+                                    </tr>
+                                <tr>
+                                        <td>25</td>
+                                        <td>Hackberry</td>
+                                        <td>Celtis australis - C.occidentalis</td>
+                                        <td>L</td>
+                                        <td>Deep; for high water absorption and stability.</td>
+                                    </tr>
+                                <tr>
+                                        <td>26</td>
+                                        <td>Holly oak</td>
+                                        <td>Quercus ilex</td>
+                                        <td>L</td>
+                                        <td>Deep and extensive; for strength and stability.</td>
+                                    </tr>
+                                <tr>
+                                        <td>27</td>
+                                        <td>Hollyhocks</td>
+                                        <td>Alcea sp</td>
+                                        <td>M</td>
+                                        <td>Taproot; thick and deep main root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>28</td>
+                                        <td>Indian Shot</td>
+                                        <td>Canna indica</td>
+                                        <td>M</td>
+                                        <td>Rhizomatous (underground); shallow and fibrous root system.</td>
+                                    </tr>
+                                <tr>
+                                        <td>29</td>
+                                        <td>Italian woodbine</td>
+                                        <td>Lonicera caprifolium</td>
+                                        <td>M</td>
+                                        <td>Medium to Deep; strong roots to support climbing.</td>
+                                    </tr>
+                                <tr>
+                                        <td>30</td>
+                                        <td>Japanese barberry</td>
+                                        <td>Berberis thunbergii</td>
+                                        <td>M</td>
+                                        <td>Shallow to Medium; fibrous and dense roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>31</td>
+                                        <td>Judas tree</td>
+                                        <td>Cercis siliquastrum</td>
+                                        <td>L</td>
+                                        <td>Deep; strong and drought-resistant root system.</td>
+                                    </tr>
+                                <tr>
+                                        <td>32</td>
+                                        <td>Juniper</td>
+                                        <td>Juniperus horizentalis</td>
+                                        <td>L</td>
+                                        <td>Shallow to Medium; extensive root system.</td>
+                                    </tr>
+                                <tr>
+                                        <td>33</td>
+                                        <td>Lady Banks' rose</td>
+                                        <td>Rosa banksiae</td>
+                                        <td>M</td>
+                                        <td>Medium to Deep; strong and extensive root system.</td>
+                                    </tr>
+                                <tr>
+                                        <td>34</td>
+                                        <td>Lavender</td>
+                                        <td>Lavandula angustifolia</td>
+                                        <td>L-M</td>
+                                        <td>Taproot; main root for stability.</td>
+                                    </tr>
+                                <tr>
+                                        <td>35</td>
+                                        <td>lucky plant</td>
+                                        <td>Crassula ovata</td>
+                                        <td>L</td>
+                                        <td>Very Shallow; fibrous and shallow roots (succulent).</td>
+                                    </tr>
+                                <tr>
+                                        <td>36</td>
+                                        <td>Marguerite daisy</td>
+                                        <td>Argyranthemum frutescens</td>
+                                        <td>M</td>
+                                        <td>Shallow; clump forming and fibrous root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>37</td>
+                                        <td>Mediterranean cypress</td>
+                                        <td>Cupressus sempervirens</td>
+                                        <td>M</td>
+                                        <td>Deep, extensive, and drought-resistant.</td>
+                                    </tr>
+                                <tr>
+                                        <td>38</td>
+                                        <td>Mountain pine</td>
+                                        <td>Pinus mugo</td>
+                                        <td>L</td>
+                                        <td>Medium to Deep; strong root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>39</td>
+                                        <td>New Zealand flax</td>
+                                        <td>Phormium tenax</td>
+                                        <td>L-M</td>
+                                        <td>Fibrous and relatively shallow; dense and clump-forming root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>40</td>
+                                        <td>Olive</td>
+                                        <td>Olea europaea</td>
+                                        <td>L</td>
+                                        <td>Deep and extensive; for water absorption in dry Mediterranean conditions.</td>
+                                    </tr>
+                                <tr>
+                                        <td>41</td>
+                                        <td>Pampas grass</td>
+                                        <td>Cortaderia selloana</td>
+                                        <td>M</td>
+                                        <td>Deep and dense; strong and clump-forming root system.</td>
+                                    </tr>
+                                <tr>
+                                        <td>42</td>
+                                        <td>Paper Mulberry</td>
+                                        <td>Broussonetia papyrifera</td>
+                                        <td>M-H</td>
+                                        <td>Deep and extensive; similar to large trees.</td>
+                                    </tr>
+                                <tr>
+                                        <td>43</td>
+                                        <td>Pigface</td>
+                                        <td>Carpobrotus edulis</td>
+                                        <td>L</td>
+                                        <td>Shallow; groundcover plant, superficial and creeping roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>44</td>
+                                        <td>pinkladies</td>
+                                        <td>Oenothera speciosa</td>
+                                        <td>M</td>
+                                        <td>Taproot; main and deep root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>45</td>
+                                        <td>Red hot pokers</td>
                                         <td>Kniphofia uvaria</td>
                                         <td>M</td>
-                                        <td>متوسط؛ ریشه‌های گوشتی و الیافی.</td>
+                                        <td>Medium; fleshy and fibrous roots.</td>
                                     </tr>
-                                    <tr>
-                                        <td>62</td>
-                                        <td>یاس هلندی</td>
+                                <tr>
+                                        <td>46</td>
+                                        <td>Rosemary</td>
+                                        <td>Salvia rosmarinus</td>
+                                        <td>L-M</td>
+                                        <td>Medium; strong and fibrous root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>47</td>
+                                        <td>Russian olive</td>
+                                        <td>Elaeagnus angustifolia</td>
+                                        <td>L-M</td>
+                                        <td>Deep and extensive; resistant to drought and salinity.</td>
+                                    </tr>
+                                <tr>
+                                        <td>48</td>
+                                        <td>Santolina</td>
+                                        <td>Santolina virens</td>
+                                        <td>L-M</td>
+                                        <td>Shallow to Medium; fibrous roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>49</td>
+                                        <td>Silk tree</td>
+                                        <td>Albizia julibrissin</td>
+                                        <td>M</td>
+                                        <td>Medium; extensive and dense roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>50</td>
+                                        <td>Silver ragwort</td>
+                                        <td>Jacobaea maritima</td>
+                                        <td>M</td>
+                                        <td>Shallow; fibrous roots, suitable for ground cover.</td>
+                                    </tr>
+                                <tr>
+                                        <td>51</td>
+                                        <td>Steppegrass</td>
+                                        <td>Stipa capansis</td>
+                                        <td>L</td>
+                                        <td>Medium to Deep; fibrous and drought resistant roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>52</td>
+                                        <td>Thuja</td>
+                                        <td>Thuja orientalis</td>
+                                        <td>M</td>
+                                        <td>Shallow to Medium; extensive and dense roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>53</td>
+                                        <td>Trumpet vine</td>
+                                        <td>Campsis grandiflora</td>
+                                        <td>L-M</td>
+                                        <td>Deep; strong and sometimes aggressive roots.</td>
+                                    </tr>
+                                <tr>
+                                        <td>54</td>
+                                        <td>Turkish pine</td>
+                                        <td>Pinus brutia</td>
+                                        <td>L</td>
+                                        <td>Deep; strong roots for anchoring in rocky soils.</td>
+                                    </tr>
+                                <tr>
+                                        <td>55</td>
+                                        <td>wavyleaf sea lavender</td>
+                                        <td>Limonium sinuatum</td>
+                                        <td>M</td>
+                                        <td>Medium; clump forming root.</td>
+                                    </tr>
+                                <tr>
+                                        <td>56</td>
+                                        <td>Waxleaf privet</td>
                                         <td>Ligustrum texanum-L.luccidum</td>
                                         <td>M-H</td>
-                                        <td>متوسط؛ ریشه توده‌ای و قوی.</td>
+                                        <td>Medium; strong and clump forming root.</td>
                                     </tr>
-                                    <tr>
-                                        <td>63</td>
-                                        <td>یاس هلندی</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
+                                <tr>
+                                        <td>60</td>
+                                        <td>yarrow</td>
+                                        <td>Achillea millefolium</td>
+                                        <td>M</td>
+                                        <td>Shallow and fibrous; the plant spreads via rhizomes.</td>
                                     </tr>
-                                    <tr>
-                                        <td>64</td>
-                                        <td>یوکا</td>
+                                <tr>
+                                        <td>57</td>
+                                        <td>Yucca</td>
                                         <td>Yucca filamentosa</td>
                                         <td>L</td>
-                                        <td>متوسط تا عمیق؛ ریشه‌های گوشتی برای ذخیره آب.</td>
+                                        <td>Medium to Deep; fleshy roots for water storage.</td>
                                     </tr>
+                                    
+                                    
                                 </tbody>
                             </table>
                         </div>

@@ -1,45 +1,43 @@
 ---
-title: راهنمای جامع معرفی انواع خاک به وب‌کشت
-description:  معرفی پارامترهای اساسی خاک جهت معرفی به سامانه آبیاری هوشمند وب کشت
+title: A Comprehensive Guide to Defining Soil Types for WebKesht
+description: Introducing Essential Soil Parameters for the WebKesht Smart Irrigation System
 ---
 
 <div class="container">
         <div class="header">
-             <h1> راهنمای تعیین بافت خاک برای مدیریت هوشمند آبیاری 🌱</h1>
+             <h1> A Guide to Determining Soil Texture for Smart Management 🌱</h1>
         </div>
 
         <div class="content">
             <!-- بخش 1: تعریف بافت خاک -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>🔬 تعریف بافت خاک و انواع ذرات</span>
+                    <span>🔬 Definition of Soil Texture and Particle Types</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content">
                     <div class="section-body">
-                        <p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;">
-                            بافت خاک به درصد نسبی ذرات معدنی شن، سیلت و رس در خاک اطلاق می‌شود. این ویژگی فیزیکی اساسی خاک، تعیین‌کننده بسیاری از خصوصیات هیدرولوژیکی و زراعی خاک از جمله ظرفیت نگهداری آب، سرعت نفوذ آب، تهویه و قابلیت دسترسی ریشه‌ها به آب و مواد غذایی است.
-                        </p>
+                        <p style="margin-bottom: 25px; text-align: justify; line-height: 1.8;"> Soil texture refers to the relative percentage of the mineral particles—sand, silt, and clay—within the soil. This fundamental physical property determines many of the soil’s hydrological and agricultural characteristics, including water-holding capacity, water infiltration rate, aeration, and the accessibility of water and nutrients to plant roots.</p>
 
                         <div class="definition-grid">
                             <div class="definition-card">
-                                <h3>🏖️ ذرات شن (Sand)</h3>
-                                                          <p><strong>اندازه:</strong> 2 میلی‌متر تا 50 میکرومتر</p>
-                            <p>درشت‌ترین ذرات هستند. نفوذپذیری آب بالا و ظرفیت نگهداری آب و مواد غذایی پایینی دارند. به خاک‌های شنی، خاک سبک می‌گویند.</p>
+                                <h3>🏖️ Sand Particles (Sand)</h3>
+                                                          <p><strong>Size:</strong> 2 mm to 50 µm </p>
+                            <p>These are the coarsest particles. They have high water permeability but low water and nutrient holding capacity. Sandy soils are often called “light soils".</p>
 
                             </div>
 
                             <div class="definition-card">
-                                <h3>🌾 ذرات سیلت (Silt)</h3>
-                                                            <p><strong>اندازه:</strong> 50 تا 2 میکرومتر</p>
-                            <p>اندازه‌ای بین شن و رس دارند. ظرفیت نگهداری آب متوسطی دارند و زهکشی آن‌ها نیز متوسط است.</p>
+                                <h3>🌾 Silt Particles (Silt)</h3>
+                                                            <p><strong>Size:</strong> 50 µm to 2 µm </p>
+                            <p>Their size is between sand and clay. They have a medium water-holding capacity and moderate drainage.</p>
 
                             </div>
 
                             <div class="definition-card">
-                                <h3>🧱 ذرات رس (Clay)</h3>
-                                                           <p><strong>اندازه:</strong> کوچکتر از 2 میکرومتر</p>
-                            <p>ریزترین ذرات هستند. نفوذپذیری آب بسیار پایین و ظرفیت نگهداری آب و مواد غذایی بالایی دارند. به خاک‌های رسی، خاک سنگین می‌گویند.</p>
+                                <h3>🧱 Clay Particles (Clay)</h3>
+                                                           <p><strong>Size:</strong> smaller than 2 µm </p>
+                            <p>These are the finest particles. They have very low water permeability but a high capacity for holding water and nutrients. Clay soils are often called “heavy soils.”.</p>
 
                             </div>
 
@@ -47,7 +45,7 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
 
                         </div>
                          <div class="highlight">
-                        <strong>🌿 لوم (Loam):</strong> به خاکی گفته می‌شود که ترکیبی تقریباً متعادل از این سه ذره را داشته باشد و به طور عمومی بهترین بافت برای رشد گیاه به حساب می‌آید.
+                        <strong>🌿 Loam:</strong> Loam is a soil that has a roughly balanced combination of these three particles and is generally considered the best texture for plant growth.
                     </div>
                     </div>
                 </div>
@@ -58,24 +56,25 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
             <!-- بخش 2: اهمیت تشخیص بافت -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>⚡ اهمیت تشخیص بافت خاک در مدیریت هوشمند آبیاری</span>
+                    <span>⚡ The Importance of Identifying Soil Texture in Smart Irrigation Management</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content">
                     <div class="section-body">
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            شناخت دقیق بافت خاک، پایه و اساس برنامه‌ریزی دقیق آبیاری و بهینه‌سازی مصرف آب در کشاورزی است. در ادامه، سه دلیل کلیدی اهمیت این شناخت آورده شده است:
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">A precise understanding of soil texture is the foundation for accurate irrigation scheduling and optimizing water use in agriculture. Below are three key reasons why this knowledge is so important:
                         </p>
 
                         <ol class="importance-list">
                             <li>
-                                <strong>💧 ظرفیت نگهداری آب:</strong> بافت خاک مستقیماً تعیین می‌کند که خاک چقدر آب می‌تواند برای گیاه نگه دارد (ظرفیت زراعی). خاک‌های رسی آب بیشتری ذخیره می‌کنند، در حالی که خاک‌های شنی به سرعت آب را از دست می‌دهند.
+                                <strong>💧 Water-Holding Capacity:</strong> Soil texture directly determines how much water the soil can hold for the plant (its field capacity). Clay soils store more water, whereas sandy soils lose water quickly.
                             </li>
                             <li>
-                                <strong>🚿 سرعت نفوذ و زهکشی آب:</strong> خاک‌های شنی آب را سریع جذب کرده و به سرعت زهکشی می‌کنند (نفوذپذیری بالا)، لذا نیاز به آبیاری‌های <strong>کوتاه‌تر و مکررتر</strong> دارند. در مقابل، خاک‌های رسی آهسته‌تر آب را جذب کرده و نگه می‌دارند (نفوذپذیری پایین)، که خطر رواناب و غرقابی شدن در آن‌ها بیشتر است و نیاز به آبیاری‌های <strong>طولانی‌تر با فواصل بیشتر</strong> دارند.
+                                <strong>🚿 Infiltration Rate and Drainage:</strong>
+                                Sandy soils absorb and drain water quickly (high permeability), thus requiring <strong> shorter, more frequent</strong> irrigations. In contrast, clay soils absorb and hold water more slowly (low permeability), which increases the risk of runoff and waterlogging and <strong>requires longer irrigations with greater intervals</strong>.
                             </li>
                             <li>
-                                <strong>📊 انتخاب سنسور و روش آبیاری:</strong> بافت خاک بر انتخاب نوع و محل قرارگیری سنسورهای رطوبت خاک و همچنین بر سیستم آبیاری مناسب (مثلاً آبیاری قطره‌ای برای خاک‌های رسی بهتر است) تأثیر می‌گذارد.
+                                <strong>📊 Sensor and Irrigation Method Selection:</strong>
+                                Soil texture influences the selection and placement of soil moisture sensors as well as the choice of an appropriate irrigation system (for example, drip irrigation is often better suited for clay soils).
                             </li>
                         </ol>
                     </div>
@@ -87,58 +86,53 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
             <!-- بخش 3: راهنمای مزرعه‌ای (شامل زیربخش‌ها) -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>🔍 راهنمای مزرعه‌ای تشخیص بافت خاک با چشم و دست</span>
+                    <span>🔍 A Field Guide to Identifying Soil Texture by Sight and Touch</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content">
                     <div class="section-body">
-                        <div class="highlight">
-                            در غیاب نتایج آزمایشگاهی، می‌توانید با استفاده از این روش‌های ساده و با تکیه بر حس لامسه و مشاهدات چشمی خود، پازل بافت خاک مزرعه را به صورت تجربی و سریع حل کنید و مدیریت آبیاری را آغاز نمایید.
-                        </div>
+                        <div class="highlight"> In the absence of laboratory results, you can use these simple methods, relying on your sense of touch and visual observations, to empirically and quickly solve the puzzle of your field’s soil texture and begin managing your irrigation.</div>
 
                         <!-- زیربخش 1: روش آزمون لوله -->
                         <div class="sub-section">
                             <div class="sub-header" onclick="toggleSubSection(this)">
-                                <span>🧪 روش آزمون لوله (Jar Test - چشمی)</span>
+                                <span>🧪 The Jar Test Method (ocular)</span>
                                 <span class="sub-icon">−</span>
                             </div>
                             <div class="sub-content">
                                 <div class="sub-body">
                                     <div class="method-steps">
-                                        <h4>📋 مراحل انجام:</h4>
+                                        <h4>📋 Procedure:</h4>
                                         <div class="step-timeline">
                                             <div class="timeline-item">
-                                                <strong>مرحله 1:</strong> مقداری خاک (حدود یک چهارم ظرف) را در یک شیشه دربسته (مانند شیشه مربا) بریزید.
+                                                <strong>Step 1:</strong>Pour some soil (filling about one-quarter of the container) into a lidded jar (like a jam jar).
                                             </div>
                                             <div class="timeline-item">
-                                                <strong>مرحله 2:</strong> آب و یک قاشق چایخوری مایع ظرفشویی (به عنوان عامل پراکنده‌ساز) به آن اضافه کنید تا ظرف تقریباً پر شود.
+                                                <strong>Step 2:</strong>Add water and one teaspoon of dish soap (as a dispersing agent) until the jar is nearly full.
                                             </div>
                                             <div class="timeline-item">
-                                                <strong>مرحله 3:</strong> ظرف را به شدت برای چند دقیقه تکان دهید تا ذرات خاک کاملاً پراکنده شوند.
+                                                <strong>Step 3:</strong> Shake the jar vigorously for several minutes to completely disperse the soil particles.
                                             </div>
                                             <div class="timeline-item">
-                                                <strong>مرحله 4:</strong> اجازه دهید خاک ته‌نشین شود و تغییرات را مشاهده کنید:
+                                                <strong>Step 4:</strong> Let the soil settle and observe the changes:
                                                 <ul style="margin-top: 10px;">
-                                                    <li><strong>⏱️ پس از 1 دقیقه:</strong> ذرات درشت <strong>شن</strong> ته‌نشین می‌شوند.</li>
-                                                    <li><strong>⏰ پس از 2 ساعت:</strong> ذرات <strong>سیلت</strong> روی شن‌ها ته‌نشین می‌شوند.</li>
-                                                    <li><strong>🕐 پس از 24 تا 48 ساعت:</strong> ذرات بسیار ریز <strong>رس</strong> در نهایت روی سیلت‌ها ته‌نشین شده و یا معلق می‌مانند (بخش رس).</li>
+                                                    <li><strong>⏱️ After 1 Minute:</strong> The coarse <strong>sand </strong>particles will settle.
+                                                    <li><strong>⏰ After 2 Hours:</strong>  The <strong>silt </strong>particles will settle on top of the sand.
+                                                    <li><strong>🕐 After 24-48 Hours:</strong> The very fine <strong>clay</strong> particles will finally settle on the silt or remain suspended in the water.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">📐 تشخیص و محاسبه:</h4>
-                                    <p style="text-align: justify; margin-bottom: 18px; line-height: 1.8;">
-                                        پس از ته‌نشین شدن کامل ذرات در روش آزمون لوله، شما می‌توانید با اندازه‌گیری ارتفاع هر لایه، درصد تقریبی شن، سیلت و رس را از طریق رابطه زیر محاسبه کنید:
-                                    </p>
+                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">📐 Identification and Calculation:</h4>
+                                    <p style="text-align: justify; margin-bottom: 18px; line-height: 1.8;"> After the particles have completely settled in the jar test, you can calculate the approximate percentage of sand, silt, and clay by measuring the height of each layer using the following formula:</p>
 
                                     <div class="formula-box">
-                                        📊 درصد هر جزء $=$ (ارتفاع لایه هر جزء (میلیمتر) $\div$ ارتفاع کل رسوبات ته‌نشین شده (میلی متر)) $\times$ $100$
+                                        📊 Component Percentage (%) $=$ Height of the component layer$(mm)$ $\div$ Total height of settled sediment$(mm)$  $\times$ $100$
                                     </div>
 
-                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">📈 تفسیر نتایج:</h4>
-                                    <p style="text-align: justify; line-height: 1.8;">
-                                        برای تعیین دقیق نام بافت خاک (مانند لوم شنی، لوم رسی و...)، باید از <strong>🔺 مثلث بافت خاک</strong> استفاده کنید. این مثلث یک نمودار سه‌گانه است که ارتباط بین درصدهای شن، سیلت و رس را نمایش می‌دهد و خاک را به ۱۲ گروه بافتی طبقه‌بندی می‌کند.
+                                    <h4 style="margin: 20px 0 12px 0; color: #2c3e50;">📈 Interpreting the Results:</h4>
+                                    <p style="text-align: justify; line-height: 1.8;"> To precisely determine the soil texture’s name (e.g., sandy loam, clay loam, etc.), you must use the <strong>🔺 Soil Texture Triangle</strong>. This triangle is a ternary plot that shows the relationship between the percentages of sand, silt, and clay, classifying the soil into 12 textural groups.
                                     </p>
                                 </div>
                             </div>
@@ -147,30 +141,28 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                         <!-- زیربخش 2: مثلث بافت خاک -->
                         <div class="sub-section">
                             <div class="sub-header" onclick="toggleSubSection(this)">
-                                <span>🔺 نحوه استفاده از مثلث بافت خاک</span>
+                                <span>🔺 How to Use the Soil Texture Triangle</span>
                                 <span class="sub-icon">−</span>
                             </div>
                             <div class="sub-content">
                                 <div class="sub-body">
                                     <div class="method-steps">
                                         <ol style="padding-right: 25px;">
-                                            <li style="margin: 12px 0; line-height: 1.7;"><strong>🏖️ محور شن (Sand):</strong> درصد شن را در ضلع پایینی مثلث پیدا کنید. خطوط شن <strong>به سمت چپ</strong> و موازی با ضلع سیلت حرکت می‌کنند.</li>
-                                            <li style="margin: 12px 0; line-height: 1.7;"><strong>🧱 محور رس (Clay):</strong> درصد رس را در ضلع چپ مثلث پیدا کنید. خطوط رس <strong>به سمت راست</strong> و موازی با ضلع شن حرکت می‌کنند.</li>
-                                            <li style="margin: 12px 0; line-height: 1.7;"><strong>🌾 محور سیلت (Silt):</strong> درصد سیلت را در ضلع راست مثلث پیدا کنید. خطوط سیلت <strong>به صورت افقی</strong> (یا موازی با ضلع رس) حرکت می‌کنند.</li>
+                                            <li style="margin: 12px 0; line-height: 1.7;"><strong>🏖️ Sand Axis:</strong>Find your sand percentage on the bottom side of the triangle. The sand lines run upwards <strong>to the left</strong>, parallel to the silt side. </li>
+                                            <li style="margin: 12px 0; line-height: 1.7;"><strong>🧱 Clay Axis:</strong>Find your clay percentage on the left side of the triangle. The clay lines run horizontally <strong>to the right</strong>, parallel to the sand side.</li>
+                                            <li style="margin: 12px 0; line-height: 1.7;"><strong>🌾 Silt Axis:</strong>Find the percentage of silt on the right side of the triangle. The silt lines run <strong>horizontally</strong> (or parallel to the clay side) </li>
                                         </ol>
                                     </div>
 
-                                    <p style="text-align: justify; margin: 18px 0; line-height: 1.8;">
-                                        نقطه‌ای که سه خط (که از درصدهای به دست آمده شن، سیلت و رس رسم شده‌اند) یکدیگر را قطع می‌کنند، نشان‌دهنده کلاس بافتی خاک شماست.
-                                    </p>
+                                    <p style="text-align: justify; margin: 18px 0; line-height: 1.8;"> The point where the three lines drawn from your sand, silt, and clay percentages intersect indicates your soil’s textural class.</p>
 
                                     <div class="note-box">
-                                        <strong>💡 نکته مهم:</strong> دقت کنید که مجموع درصدهای شن، سیلت و رس همیشه باید <strong>100%</strong> باشد.
+                                        <strong>💡 Important Note:</strong> Ensure that the sum of your sand, silt, and clay percentages always equals <strong>100%</strong>.
                                     </div>
 
                                     <div class="image-container">
-                                        <img src="images/Picture1.jpg" alt="مثلث بافت خاک USDA" />
-                                        <p>🔺 مثلث بافت خاک USDA - راهنمای تعیین کلاس بافتی</p>
+                                        <img src="images/Picture1.jpg" alt="USDA Soil Texture Trianglele" />
+                                        <p>🔺 USDA Soil Texture Triangle - A Guide to Determining Textural Class</p>
                                     </div>
                                 </div>
                             </div>
@@ -179,56 +171,55 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                         <!-- زیربخش 3: روش آزمون مفتول -->
                         <div class="sub-section">
                             <div class="sub-header" onclick="toggleSubSection(this)">
-                                <span>🤏 روش آزمون مفتول (Ribbon Test - لمسی)</span>
+                                <span>🤏 The Ribbon Test Method (Tactile)</span>
                                 <span class="sub-icon">−</span>
                             </div>
                             <div class="sub-content">
                                 <div class="sub-body">
-                                    <p style="text-align: justify; margin-bottom: 20px; line-height: 1.8;">
-                                        این روش به شما کمک می‌کند تا میزان <strong>چسبندگی و خمیری بودن</strong> خاک را (که مستقیماً با میزان رس مرتبط است) تعیین کنید.
+                                    <p style="text-align: justify; margin-bottom: 20px; line-height: 1.8;"> This method helps you determine the <strong>soil’s stickiness and plasticity</strong> (which is directly related to its clay content).
                                     </p>
 
                                     <div class="table-container">
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>نوع بافت خاک</th>
-                                                    <th>خصوصیت هنگام لمس</th>
-                                                    <th>آزمون مفتول</th>
+                                                    <th>Soil Texture Type</th>
+                                                    <th>Feel/Texture when Touched</th>
+                                                    <th>Ribbon Test Result</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td><strong>🏖️ شنی</strong><br>Sand</td>
-                                                    <td>زبر، دانه‌دانه</td>
-                                                    <td>مفتول نمی‌شود یا به صورت نوار خیلی کوتاه و شکننده کمتر از 2.5 سانتی‌متر تشکیل می‌دهد.</td>
+                                                    <td><strong>🏖️ Sandy</strong><br>Sand</td>
+                                                    <td>Gritty, coarse</td>
+                                                    <td>Does not form a ribbon or forms a very short, fragile ribbon less than 2.5 cm (1 inch).</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>🌱 لومی شنی</strong><br>Loamy Sand</td>
-                                                    <td>کمی زبر، حس نرمی کم</td>
-                                                    <td>به سختی مفتول می‌شود، نوار بسیار شکننده در حد 2.5 تا 3 سانتی‌متر.</td>
+                                                    <td><strong>🌱 Sandy Loam</strong><br>Loamy Sand</td>
+                                                    <td> Slightly gritty, with a minimal soft feel</td>
+                                                    <td> Forms a ribbon with difficulty; a very fragile ribbon around 2.5 to 3 cm (1 to 1.2 inches).</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>🌿 لوم</strong><br>Loam</td>
-                                                    <td>حس مخملین و نرمی دارد، کمی زبر</td>
-                                                    <td>نوار کوتاهی (حدود 2.5 تا 5 سانتی‌متر) تشکیل می‌دهد که به راحتی می‌شکند و حس پلاستیکی کمی دارد.</td>
+                                                    <td><strong>🌿 Loam</strong><br>Loam</td>
+                                                    <td>Velvety and soft, slightly gritty</td>
+                                                    <td> Forms a short ribbon (about 2.5 to 5 cm or 1 to 2 inches) that breaks easily and has little plasticity.</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>🏺 لوم رسی</strong><br>Clay Loam</td>
-                                                    <td>حس چسبندگی و خمیری بودن دارد، تا حدی زبر (به دلیل شن)</td>
-                                                    <td>نوار نسبتاً بلند و قابل انعطاف (حدود 5 تا 7.5 سانتی‌متر) تشکیل می‌دهد.</td>
+                                                    <td><strong>🏺 Clay Loam</strong><br>Clay Loam</td>
+                                                    <td>Sticky and plastic feel, somewhat gritty (due to sand)</td>
+                                                    <td>Forms a relatively long and flexible ribbon (about 5 to 7.5 cm or 2 to 3 inches).</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>🧱 رسی</strong><br>Clay</td>
-                                                    <td>بسیار چسبنده، خمیری و لیز هنگام مرطوب بودن</td>
-                                                    <td>به راحتی یک نوار بلند و پایدار (بیشتر از 7.5 سانتی‌متر) تشکیل می‌دهد که قابل خم شدن است.</td>
+                                                    <td><strong>🧱 Clayey</strong><br>Clay</td>
+                                                    <td>Very sticky, plastic, and slick when wet</td>
+                                                    <td> Easily forms a long, stable ribbon (more than 7.5 cm or 3 inches) that can be bent.</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
                                     <div class="warning-box">
-                                        <strong>⚠️ نکته مهم:</strong> برای انجام این آزمایش، مقدار کمی از خاک را بردارید، به آرامی آب اضافه کنید و آن را بین شست و انگشت اشاره بمالید تا به حالت خمیری درآید. سپس سعی کنید با فشار دادن، یک نوار یا مفتول به قطر حدود 3 میلی‌متر ایجاد کنید.
+                                        <strong>⚠️ Important Note:</strong> To perform this test, take a small amount of soil, gradually add water, and knead it between your thumb and forefinger until it reaches a putty-like consistency. Then, try to create a ribbon about 3 mm (1/8 inch) thick by squeezing it.
                                     </div>
                                 </div>
                             </div>
@@ -242,30 +233,28 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
             <!-- بخش 4: جدول پارامترهای رطوبتی -->
             <div class="main-section">
                 <div class="section-header" onclick="toggleSection(this)">
-                    <span>📊 جدول راهنمای پارامترهای رطوبتی خاک برای آبیاری</span>
+                    <span>📊 Reference Table of Soil Moisture Parameters for Irrigation</span>
                     <span class="section-icon">−</span>
                 </div>
                 <div class="section-content">
                     <div class="section-body">
-                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;">
-                            هم اکنون که بافت خاک خود را مشخص کرده‌اید، مقادیر پارامترهای مربوط به آن را از جدول زیر استخراج کنید و در بخش "<strong>📝 لیست خاک‌ها</strong>" وارد نمایید.
-                        </p>
+                        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;"> Now that you have identified your soil texture, extract the corresponding parameter values from the table below and enter them in the <strong>“Soil List”</strong> section of the system.</p>
 
                         <div class="table-container">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>بافت خاک</th>
-                                        <th>سرعت نفوذ نهایی خاک f<sub>0</sub><br>(mm/hr)</th>
-                                        <th>تخلخل n<br>(%)</th>
-                                        <th>رطوبت حد زراعی FC<br>(%)</th>
-                                        <th>رطوبت حد پژمردگی PWP<br>(%)</th>
-                                        <th>آب قابل دسترس TAW<br>(mm/m)</th>
+                                        <th>Soil Texture</th>
+                                        <th>Final Infiltration Rate f<sub>0</sub><br>(mm/hr)</th>
+                                        <th>Porosity n<br>(%)</th>
+                                        <th>Field Capacity FC<br>(%)</th>
+                                        <th>Wilting Point PWP<br>(%)</th>
+                                        <th>Available Water TAW<br>(mm/m)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><strong>شنی</strong><br>Sandy</td>
+                                        <td><strong>Sandy</strong><br>Sandy</td>
                                         <td>20 - 30</td>
                                         <td>38 - 43</td>
                                         <td>7 - 14</td>
@@ -273,7 +262,7 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                                         <td>50 - 75</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>لوم شنی</strong><br>Sandy Loam</td>
+                                        <td><strong>Sandy Loam</strong><br>Sandy Loam</td>
                                         <td>10 - 20</td>
                                         <td>38 - 46</td>
                                         <td>11 - 19</td>
@@ -281,7 +270,7 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                                         <td>75 - 115</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>لوم</strong><br>Loam</td>
+                                        <td><strong>Loam</strong><br>Loam</td>
                                         <td>8 - 20</td>
                                         <td>43 - 49</td>
                                         <td>18 - 26</td>
@@ -289,7 +278,7 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                                         <td>100 - 140</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>لوم رسی</strong><br>Clay Loam</td>
+                                        <td><strong>Clay Loam</strong><br>Clay Loam</td>
                                         <td>2 - 10</td>
                                         <td>40 - 49</td>
                                         <td>23 - 31</td>
@@ -297,7 +286,7 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                                         <td>120 - 160</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>سیلتی لوم</strong><br>Silty Loam</td>
+                                        <td><strong>Silty Loam</strong><br>Silty Loam</td>
                                         <td>5 - 13</td>
                                         <td>46 - 54</td>
                                         <td>20 - 30</td>
@@ -305,7 +294,7 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                                         <td>110 - 160</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>رسی</strong><br>Clay</td>
+                                        <td><strong>Clayey</strong><br>Clay</td>
                                         <td>1 - 5</td>
                                         <td>43 - 58</td>
                                         <td>31 - 39</td>
@@ -317,7 +306,7 @@ description:  معرفی پارامترهای اساسی خاک جهت معرف�
                         </div>
 
                         <div class="note-box" style="margin-top: 25px;">
-                            <strong>✅ نتیجه‌گیری:</strong> با شناخت دقیق بافت خاک و استفاده از پارامترهای مناسب، می‌توانید به مدیریت بهینه آبیاری دست یابید و بهره‌وری مصرف آب را به حداکثر برسانید.
+                            <strong>✅ Conclusion:</strong> By accurately identifying the soil texture and using the appropriate parameters, you can achieve optimal irrigation management and maximize water use efficiency.
                         </div>
                     </div>
                 </div>
